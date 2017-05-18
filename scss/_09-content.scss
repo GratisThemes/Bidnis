@@ -1,0 +1,42 @@
+/* 9.0 Content */
+.site-content{ 
+	margin-top: 40px; 
+	margin-bottom: 40px;
+}
+
+main{
+	width: 100%;
+	min-width: 0;
+}
+
+.has-sidebar{
+	.site-content{ display: flex; }
+
+	main{ max-width: 970px; }
+}
+
+main > article:not(:last-child){
+	margin-bottom: 40px;
+}
+
+.archive-entry-header{
+	margin-bottom: 20px;
+
+	h3{ 
+		border-bottom: 1px solid $yellow; 
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+
+		a:hover{ text-decoration: none; }
+	}
+}
+
+.archive-entry .post-thumbnail{
+	margin-bottom: 20px;
+}
+
+@media (max-width: $bitTablet){
+	.has-sidebar{
+		.site-content{ display: block; }
+	}
+}

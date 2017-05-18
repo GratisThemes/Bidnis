@@ -1,0 +1,26 @@
+/* 12.0 Meta */
+.bidnis-breadcrumbs{ 
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 1rem 0;
+}
+
+.bidnis-breadcrumbs > span:not(:last-child):after{
+	content: '>>';
+	font-size: .8rem;
+	padding: 0 .5rem;
+}
+
+.entry-meta{
+	display: flex;
+	font-size: .85rem;
+}
+
+.entry-meta > span{ margin-right: 1rem; }
+
+.tags{ margin-bottom: 2rem; }
+
+@media (max-width: $tablet){
+	.entry-meta{ display: block;}
+	.entry-meta > span{ display: block; }
+}

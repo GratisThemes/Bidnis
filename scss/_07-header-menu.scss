@@ -1,0 +1,120 @@
+/* 7.0 Header menu */
+.menu-toggle{
+	flex: 1;
+	display: none;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.header-menu-container{
+	display: block;
+	background-color: $headerMenuBackgroundColor;
+}
+
+.header-menu{
+	position: relative;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 600;
+	
+	
+	>.menu-item{
+		margin-right: 10px;
+		padding: 10px 0;
+	}
+
+	.menu-item{
+		list-style: none;
+		white-space: nowrap;
+
+		&:hover{
+			background-color: $headerMenuItemHoverColor;
+
+			> a{ color: $currentMenuItemColor; }
+			
+			> .sub-menu{ display: block; }
+		}
+	}
+
+	.current-menu-item{
+		background-color: $currentMenuItemBackgroundColor;
+		
+		> a{ color: $currentMenuItemColor; }
+	}
+
+	.sub-menu{
+		min-width: 100px;
+		background-color: $headerSubMenuBackgroundColor;
+		position: absolute;
+		display: none;
+		right: -1;
+		top: 49px;
+		padding: 0;
+		z-index: 10;
+
+		.menu-item{ position: relative; }
+
+		.sub-menu{
+			top: 0;
+			left: 100%;
+		}
+	}
+
+	a{ 
+		display: block;
+		min-height: 2rem;
+		line-height: 2rem;
+		padding: 0 .5rem;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.site-header .header-menu a{
+	color: $headerMenuLinkColor;
+}
+
+@media (max-width: $tablet){
+	.js{
+		.menu-toggle{ display: block; }
+
+		.header-menu-container{ 
+			position: absolute;
+			max-width: $phone;
+			top: 50px;
+			left: 0;
+			display: none;
+			z-index: 10;
+		}
+	}
+
+	.header-menu{
+		display: block;
+
+		.menu-item{ 
+			padding: 0;
+			margin: 1rem 0;
+		}
+
+		.menu-item:hover,
+		.current-menu-item{
+			background-color: transparent !important;
+			a{ color: white !important;}
+		}
+
+		.sub-menu{ 
+			display: block;
+			position: relative;
+			top: 0;
+			right: auto;
+			padding-left: 1rem;
+			
+			.sub-menu{ left: 0; }
+		}
+	}
+}

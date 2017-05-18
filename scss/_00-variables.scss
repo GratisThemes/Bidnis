@@ -1,0 +1,38 @@
+// Fonts
+$fontStack: "Open Sans", sans-serif;
+
+// Screen sizes
+$desktop: 1280px;
+$bitTablet: 768px;
+$tablet: 640px;
+$phone: 320px;
+
+// Colors
+$yellow: #ffd200;
+$black: #191919;
+$gray: #eaeaea;
+
+$backgroundColor: white;
+$textColor: $black;
+$textColor2: white;
+$linkColor: $black;
+
+// Header menu colors
+$headerMenuBackgroundColor: $black;
+$headerSubMenuBackgroundColor: $black;
+$headerMenuLinkColor: white;
+$headerMenuItemHoverColor: $yellow;
+$currentMenuItemBackgroundColor: $yellow;
+$currentMenuItemColor: $black;
+
+// Borders
+$borderColor: $yellow;
+$inputBorderColor: $yellow;
+
+// <code> tag and similar
+$codeTagColor: $gray;
+$codeTagTextColor: $black;
+
+// Forms and Buttons
+$buttonColor: $yellow;
+$buttonTextColor: $black;

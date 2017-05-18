@@ -1,0 +1,21 @@
+/* 11.0 Post formats */
+.single-format-quote,
+.single-format-link,
+.single-format-status,
+.single-format-audio{
+  .post{
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+.single-format-quote .post{
+  q,
+  blockquote{
+    border: none;
+  }
+}
+
+.single-format-link .post{  text-align: center; }
+
+.single-format-chat .post{ font-weight: bold; }
