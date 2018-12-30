@@ -1,55 +1,47 @@
 <?php
 /**
- * The template part for displaying content
+ * Template for displaying post header, content and footer
  *
  * @package Bidnis
- * @since Bidnis 1.0
+ * @since 1.0.0
+ * @version 1.2.0
  */
+?>
+<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  
+  <?php get_template_part( 'template-parts/header', 'entry' ); ?>
 
-while( have_posts() ): the_post(); ?>
-	<?php get_template_part('template-parts/content_header'); ?>
-	
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php the_content(); ?>
+  <?php if ( 
+    get_the_post_thumbnail() !== '' &&
+    (
+      (  is_singular() && get_theme_mod( 'thumbnail_content', true ) ) ||
+      ( !is_singular() && get_theme_mod( 'thumbnail_index',   true ) )
+    )
+  ): ?>
+    
+    <a class="post-thumbnail" href="<?php the_permalink() ?>">
+      
+      <?php the_post_thumbnail( 'bidnis-featured-image' ); ?>
+    
+    </a><!-- .post-thumbnail -->
+  
+  <?php endif; ?>
 
-		<div style="clear: both; ">&nbsp;</div>
-	</article>
+  <article class="entry-content">
+    
+    <?php the_content(); ?>
 
-	<?php if( get_theme_mod( 'entry_meta_tags', true ) && has_tag() ): ?>
-		<div class="tags">
-			<i class="fa fa-tag"></i>
-			<?php the_tags('', ', ') ?>
-		</div>
-	<?php endif; ?>
-	
-	<?php if( is_single() ){
-		wp_link_pages( array(
-			'before'      => '<div class="pagination"><span class="page-links-title">' . __( 'Pages:', 'bidnis' ) . '</span>',
-			'after'       => '</div>',
-			'link_before' => '<span>',
-			'link_after'  => '</span>',
-			'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'bidnis' ) . ' </span>%',
-			'separator'   => '<span class="screen-reader-text">, </span>',
-		) );
-	} ?>
+    <?php
+    wp_link_pages( array(
+      'before' => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
+      'after' => '</div>',
+      'link_before' => '<span class="page-number">',
+      'link_after' => '</span>',
+    ) );
+    ?>
 
-	<?php ( !is_page() ) ? get_template_part('template-parts/author_bio') : false; ?>
+  </article><!-- .post-content -->
 
-	<?php if( is_singular( 'attachment' ) ): ?>
-		<div class="nav-links">
-			<div class="nav-previous"><?php previous_image_link( false, __( 'Previous Image', 'bidnis' ) ); ?></div>
-			<div class="nav-next"><?php next_image_link( false, __( 'Next Image', 'bidnis' ) ); ?></div>
-		</div><!-- .nav-links -->
-	
-	<?php elseif ( is_singular( 'post' ) ):
-		// Previous/next post navigation.
-		the_post_navigation( array(
-			'next_text' => '<span class="screen-reader-text">' . __( 'Next post:', 'bidnis' ) . '</span> ' .
-				'<span class="post-title">%title</span>',
-			'prev_text' => '<span class="meta-nav" aria-hidden="true"></span> ' .
-				'<span class="screen-reader-text">' . __( 'Previous post:', 'bidnis' ) . '</span> ' .
-				'<span class="post-title">%title</span>',
-		) );
-	endif; ?>
-	
-<?php endwhile; ?>
+  <?php if ( is_single() ) get_template_part( 'template-parts/footer', 'entry' ); ?>
+
+</section>

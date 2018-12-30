@@ -1,0 +1,156 @@
+#site-header {
+  background-color: var(--color-scheme);
+  color: var(--color-header-text);
+
+  a {
+    text-decoration: none;
+    color: var(--color-header-text);
+  }
+}
+
+#site-branding {
+  display: grid;
+  grid-template-columns: minmax(0px, 100%);
+  text-align: center;
+  font-weight: 800;
+}
+
+.site-title,
+.site-tagline {
+  text-transform: uppercase;
+}
+
+.site-title {
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+
+.site-tagline {
+  font-size: .8rem;
+}
+
+#bidnis-phone-email {
+  display: grid;
+  justify-content: center;
+  font-weight: 600;
+  grid-gap: .5em;
+  margin-top: 1em;
+}
+
+#bidnis-phone::before,
+#bidnis-email::before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: .25em;
+}
+
+#bidnis-phone::before {
+  content: '\f095';
+}
+
+#bidnis-email::before {
+  content: '\f0e0';
+}
+
+#social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+
+  a {
+    background-color: #191919;
+    color: #FFFFFF;
+    border-radius: 0.125em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  a:not(:last-child) {
+    margin: 0 .5em .5em 0;
+  }
+}
+
+#header-image-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #site-header-inner {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) repeat(2, minmax(0, auto));    
+    align-items: center;
+    grid-gap: 1em;
+  }
+  
+  #site-branding {
+    text-align: left;
+  }
+
+  #bidnis-phone-email {
+    margin: -.5em 0 0;
+    grid-template-columns: repeat(2, minmax(0, auto));
+    grid-gap: 1em;
+  }
+
+  #bidnis-phone,
+  #bidnis-email {
+    line-height: 1.5em;
+  }
+
+  #social-links {
+    margin : 0;
+  }
+
+  #header-image-container {
+    background-color: #191919;
+    min-height: 50vh;
+    display: block;
+    position: relative;
+  }
+
+  .header-image-container img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  #header-image-container-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+  }
+
+  #header-image-text, 
+  #header-image-cta {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #header-image-text {
+    font-size: 3.3rem;
+    text-shadow: 3px 3px #191919;
+  }
+
+  #header-image-cta {
+    background-color: var(--color-scheme);
+    color: var(--color-header-text);
+    font-size: 2.6rem;
+    box-shadow: 3px 3px #191919;
+    text-decoration: none;
+    padding: .25em .5em;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      padding: .25em .75em;
+    }
+  }
+}

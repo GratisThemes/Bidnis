@@ -1,0 +1,21 @@
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  word-wrap: break-word;
+}
+
+.read-more-link {
+  position: relative;
+  display: table-cell;
+  border: 0.0625em solid var(--color-border);
+  top: .5em;
+  padding: .25em .5em;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  color: var(--color-text);
+
+  &:hover {
+    background-color: var(--color-scheme);
+  }
+}
