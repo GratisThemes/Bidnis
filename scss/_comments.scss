@@ -55,10 +55,13 @@
 }
 
 .bypostauthor .comment-author .fn::before {
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
   font-style: normal;
-  font-weight: normal;
-  content: '\f040';
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  content: '\f303';
   padding-right: .5em;
 }
 

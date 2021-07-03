@@ -11,7 +11,7 @@ function bidnis_scripts() {
   wp_enqueue_style( 'bidnis-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i', array(), null);
 
   // Enqueue Font Awesome (example icon set)
-  wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/icons/font-awesome/css/font-awesome.min.css', array(), '4.6.3');
+  wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/icons/fontawesome-free-5.15.3-web/css/all.min.css', array(), '5.15.3' );
 
   // Theme stylesheet
   wp_enqueue_style( 'bidnis-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version') );

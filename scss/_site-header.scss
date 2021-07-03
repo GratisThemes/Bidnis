@@ -39,9 +39,12 @@
 
 #bidnis-phone::before,
 #bidnis-email::before {
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
   font-style: normal;
-  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
   padding-right: .25em;
 }
 
@@ -58,6 +61,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1em;
+  gap: 0.5em;
 
   a {
     background-color: #191919;
@@ -65,12 +69,10 @@
     border-radius: 0.125em;
     width: 1.5em;
     height: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
-  }
-
-  a:not(:last-child) {
-    margin: 0 .5em .5em 0;
+    padding: 0.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -102,7 +104,10 @@
   }
 
   #social-links {
-    margin : 0;
+    margin: 0;
+    justify-content: flex-end;
+    max-width: 30em;
+    max-height: 4.1em;
   }
 
   #header-image-container {

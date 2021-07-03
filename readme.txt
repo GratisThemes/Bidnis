@@ -26,16 +26,18 @@ normalize.css v8.0.0
 License: MIT
 Source: github.com/necolas/normalize.css
 
-Font Awesome 4.6.3 by @davegandy
+Font Awesome 5.15.3
   Font License
-    Applies to all desktop and webfont files in the following directory: font-awesome/fonts/.
     License: SIL OFL 1.1
     URL: http://scripts.sil.org/OFL
 
   Code License
-    Applies to all CSS and LESS files in the following directories: font-awesome/css/, font-awesome/less/, and font-awesome/scss/.
     License: MIT License
     URL: http://opensource.org/licenses/mit-license.html
+
+  Icons License
+    License: CC BY 4.0 License
+    URL: https://creativecommons.org/licenses/by/4.0/
 
 -----------------------------------------------------------------------------
 

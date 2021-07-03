@@ -13,7 +13,7 @@
   */
 $bidnis_social_icons = array(
   'Twitter'     =>  'fa-twitter',
-  'Facebook'    =>  'fa-facebook',
+  'Facebook'    =>  'fa-facebook-f',
   'Instagram'   =>  'fa-instagram',
   'Vine'        =>  'fa-vine',
   'SnapChat'    =>  'fa-snapchat-ghost',
@@ -58,7 +58,7 @@ function bidnis_social_links() {
     <?php foreach( $bidnis_social_icons as $service => $icon ): ?>
       <?php if ( get_theme_mod( 'social_media_'.strtolower( $service ) ) ): ?>
         <a title="<?php echo esc_attr( $service ); ?>" href="<?php echo esc_url( get_theme_mod( 'social_media_'.strtolower( $service ) ) ); ?>" target="_blank">
-          <i class="fa <?php echo esc_attr( $icon ); ?>"></i>
+          <i class="fab <?php echo esc_attr( $icon ); ?>"></i>
         </a>
       <?php endif; ?>
     <?php endforeach; ?>

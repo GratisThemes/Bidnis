@@ -39,14 +39,18 @@
 .entry-meta > span::before,
 .entry-meta-tags::before,
 .post-edit-link::before {
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
   font-style: normal;
-  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
   padding-right: .25em;
 }
 
 .sticky .entry-header h3::before {
   content: '\f08d';
+  font-weight: 900;
 }
 
 .entry-meta-author::before {
@@ -58,19 +62,21 @@
 }
 
 .entry-meta-comments::before {
-  content: '\f0e5';
+  content: '\f075';
 }
 
 .entry-meta-categories::before {
-  content: '\f114';
+  content: '\f07b';
 }
 
 .entry-meta-image-size::before {
   content: '\f030';
+  font-weight: 900;
 }
 
 .entry-meta-tags::before {
   content: '\f02b';
+  font-weight: 900;
 }
 
 .format-gallery .entry-meta-post-format::before,
@@ -80,10 +86,12 @@
 
 .format-audio .entry-meta-post-format::before {
   content: '\f001';
+  font-weight: 900;
 }
 
 .format-video .entry-meta-post-format::before {
-  content: '\f1c8';
+  content: '\f03d';
+  font-weight: 900;
 }
 
 .format-aside .entry-meta-post-format::before {
@@ -92,14 +100,17 @@
 
 .format-status .entry-meta-post-format::before {
   content: '\f12a';
+  font-weight: 900;
 }
 
 .format-link .entry-meta-post-format::before {
   content: '\f0c1';
+  font-weight: 900;
 }
 
 .format-quote .entry-meta-post-format::before {
   content: '\f10e';
+  font-weight: 900;
 }
 
 .format-chat .entry-meta-post-format::before {
@@ -107,7 +118,8 @@
 }
 
 .post-edit-link::before {
-  content: '\f040';
+  content: '\f303';
+  font-weight: 900;
 }
 
 @media (min-width: 1024px) {
