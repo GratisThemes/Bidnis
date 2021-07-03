@@ -62,8 +62,8 @@ function package() {
 
 // Watch
 function watch() {
-  gulp.watch('scss/*.scss', {cwd: './'}, css)
-  gulp.watch('**/*.php',    {cwd: './'}, pot)
+  gulp.watch('scss/*.scss', {cwd: './', usePolling: true}, css)
+  gulp.watch('**/*.php',    {cwd: './', usePolling: true}, pot)
 }
 
 module.exports.dev   = gulp.series(css, pot, watch)
