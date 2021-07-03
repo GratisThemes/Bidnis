@@ -2,9 +2,11 @@
   "name": "bidnis",
   "version": "1.2.0",
   "description": "WordPress theme designed for business, consultant and corporate websites",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx gulp dev",
+    "build": "npx gulp build"
   },
   "repository": {
     "type": "git",
@@ -20,12 +22,13 @@
   },
   "homepage": "https://github.com/GratisThemes/Bidnis#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
     "gulp-sort": "^2.0.0",
-    "gulp-wp-pot": "^2.3.3",
-    "gulp-zip": "^4.2.0"
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.35.1"
   }
 }
