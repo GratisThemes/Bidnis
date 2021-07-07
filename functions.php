@@ -110,8 +110,8 @@ if ( !function_exists( 'bidnis_setup' ) ) {
 
 }
 
-// Scripts and styles
-require_once get_template_directory() . '/inc/scripts.php';
+// Actions
+require_once get_template_directory() . '/inc/actions.php';
 
 // Widgets areas
 require_once get_template_directory() . '/inc/widget-areas.php';
