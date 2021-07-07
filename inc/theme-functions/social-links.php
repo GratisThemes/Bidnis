@@ -1,8 +1,13 @@
 <?php
 /**
+ * Social media links
+ *
+ * @package Bidnis
+ * @since   Bidnis 2.0.0
+ */
+
+/**
   * Social media icons
-  *
-  * @since 1.0.0
   */
 $bidnis_social_icons = array(
   'Twitter'     =>  'fa-twitter',
@@ -30,31 +35,30 @@ $bidnis_social_icons = array(
   'DeviantArt'  =>  'fa-deviantart',
   'BitCoin'     =>  'fa-btc',
 );
-
+  
 /**
- * Formated social media elements
+ * Formated social media elements.
  * 
- * @since 1.0.0
- * @return Element [div#social-links]
+ * @return Element [div.social-links].
  */
 function bidnis_social_links() {
   global $bidnis_social_icons;
-
+  
   ?>
   <div id="social-links">
-    <?php if ( get_theme_mod( 'social_media_rss' ) ): ?>
+    <?php if ( get_theme_mod( 'social_media_rss' ) ) : ?>
       <a title="<?php esc_attr( bloginfo( 'rss2_url' ) ); ?>" href="<?php esc_url( bloginfo('rss2_url') ); ?>" target="_blank">
         <i class="fa fa-rss"></i>
       </a>
     <?php endif; ?>
-
+  
     <?php foreach( $bidnis_social_icons as $service => $icon ): ?>
-      <?php if ( get_theme_mod( 'social_media_'.strtolower( $service ) ) ): ?>
+      <?php if ( get_theme_mod( 'social_media_' . strtolower( $service ) ) ) : ?>
         <a title="<?php echo esc_attr( $service ); ?>" href="<?php echo esc_url( get_theme_mod( 'social_media_'.strtolower( $service ) ) ); ?>" target="_blank">
           <i class="fab <?php echo esc_attr( $icon ); ?>"></i>
         </a>
       <?php endif; ?>
     <?php endforeach; ?>
-  </div><!-- #social-links -->
-<?php
+  </div><!-- .social-links -->
+  <?php
 }
