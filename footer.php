@@ -1,11 +1,11 @@
- <?php
+<?php
 /**
  * Template for displaying the site footer
  *
  * @package Bidnis
- * @since 1.0.0
- * @version 1.2.0
+ * @since   Bidnis 1.0
  */
+
 ?>
     <?php get_sidebar( 'footer' ); ?>
 
@@ -13,12 +13,14 @@
       <div id="site-footer-inner" class="wrapper">
         <?php
         if ( has_nav_menu( 'footer' ) ) {
-          wp_nav_menu( array(
-            'theme_location' => 'footer',
-            'menu_id'        => 'footer-nav',
-            'container'      => false,
-            'depth'          => 1,
-          ) );
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer',
+              'menu_id'        => 'footer-nav',
+              'container'      => false,
+              'depth'          => 1,
+            )
+          );
         }
         ?>
 
@@ -50,15 +52,16 @@
 
         </div><!-- #site-footer-information -->
 
-        <?php if ( get_theme_mod( 'scrolltotop', true ) ): ?>
-        <a href="#" id="scroll-to-top">
-          <span class="screen-reader-text"><?php _e( 'Scroll to the top', 'bidnis' ); ?></span>
-        </a>
+        <?php if ( get_theme_mod( 'scrolltotop', true ) ) : ?>
+          <a href="#" id="scroll-to-top">
+            <span class="screen-reader-text"><?php _e( 'Scroll to the top', 'bidnis' ); ?></span>
+          </a>
         <?php endif; ?>
 
       </div><!-- #site-footer-inner -->
     </footer><!-- #site-footer -->
-  </div><!-- #site-wrapper -->
+  
+  </div><!-- .site-container -->
 
   <?php wp_footer(); ?>
   

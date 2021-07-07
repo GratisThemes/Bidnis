@@ -95,9 +95,10 @@
   display: block;
 }
 
-@media (min-width: 768px) {
-  #header-nav-container-inner {
-    padding: 0 1em;
+@media (min-width: 48em) {
+  #header-nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #header-nav-toggle-label {

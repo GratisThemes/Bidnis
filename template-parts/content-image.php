@@ -3,10 +3,10 @@
  * Template for displaying image content
  *
  * @package Bidnis
- * @since 1.0.0
+ * @since   Bidnis 1.0
  */
 ?>
-<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <?php get_template_part( 'template-parts/header', 'entry' ); ?>
 
@@ -27,7 +27,7 @@
   
   <?php endif; ?>
 
-  <article class="entry-content">
+  <section class="entry-content">
     
     <?php the_content(); ?>
 
@@ -40,8 +40,8 @@
     ) );
     ?>
   
-  </article><!-- .entry-content -->
+  </section><!-- .entry-content -->
 
   <?php if ( is_single() ) get_template_part('template-parts/footer', 'entry'); ?>
 
-</section>
+</article>

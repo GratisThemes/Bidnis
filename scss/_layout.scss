@@ -1,90 +1,147 @@
-#site-wrapper,
-#main-content-container,
-#site-main,
-#site-main > section,
-#above-content-widget-area,
-#footer-top-widget-area-inner,
-#footer-widget-areas-inner,
-.widget-area {
-  display: grid;
-  grid-template-columns: minmax(0, 100%);
-  align-content: start;
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
-.wrapper {
-  width: calc(100% - 2em);;
-  max-width: calc(1280px - 2em);
-  padding: 1em;
-  margin-right: auto;
-  margin-left: auto;
+html {
+  box-sizing: border-box;
+  line-sizing: normal; 
 }
 
-#main-content-container,
-#site-main,
-#footer-top-widget-area-inner,
-#footer-widget-areas-inner,
-#site-main > section,
-.widget-area {
-  grid-gap: 2em;
-}
-
-#main-content-container {
+body,
+.site-container {
   min-height: 100vh;
 }
 
+.site-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-container > * {
+  padding: 1em;
+}
+
+.site-main {
+  margin: 4em 0;
+  flex-grow: 1;
+  
+  > * + * {
+    margin-top: 6em;
+  }
+}
+
+.content-container {
+  grid-area: content;
+}
+
+.content-container > * + * {
+  margin-top: 6em;
+}
+
+
+.content-container article,
+#footer-widget-areas,
 .widget-area {
-  display: grid;
-  grid-template-columns: minmax(0, 100%);
-  align-content: start;
+  > * + * {
+    margin-top: 2em;
+  }
 }
 
-@media (min-width: 768px) {
-  #header-nav-container {
-    grid-row: 2 / 3;
+.single,
+.page {
+  .content-container article > * + * {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 48em) {
+  .site-main {
+    display: grid;
+    grid-template-columns: 18em 1fr 18em;
+    grid-gap: 4em;
+    grid-template-areas: "content content content";
+    align-content: start;
+    align-items: start;
+
+    > * + * {
+      margin-top: 0;
+    }
+  }
+
+  body.has-right-sidebar .site-main {
+    grid-template-areas: "content content right-sidebar";
+  }
+
+  body.has-left-sidebar .site-main {
+    grid-template-areas: "left-sidebar content content";
+  }
+
+  body.has-right-sidebar.has-left-sidebar .site-main {
+    grid-template-areas: 
+      "left-sidebar content content"
+      "left-sidebar right-sidebar right-sidebar";
+  }
+
+  #footer-widget-areas,
+  .widget-area {
+    > * + * {
+      margin-top: 0;
+    }
   }
 
   #above-content-widget-area,
-  #footer-top-widget-area-inner,
-  #footer-widget-areas-inner {
+  #footer-top-widget-area,
+  #footer-widget-areas {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1024px) {
-  #above-content-widget-area,
-  #footer-top-widget-area-inner {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2em;
   }
 
-  #footer-widget-areas-inner {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .has-right-sidebar #main-content-container {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
-  }
-
-  .has-left-sidebar #main-content-container {
-    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
-  }
-
-  .has-right-sidebar.has-left-sidebar #main-content-container {
-    grid-template-columns: minmax(0, 300px) minmax(0, 1fr) minmax(0, 300px);
+  #footer-widget-areas {
+    grid-template-areas: 
+      "footer-column-one footer-column-two"
+      "footer-column-three footer-column-four";
   }
 
   #footer-one-widget-area {
-    grid-column: 1 / 2;
+    grid-area: footer-column-one;
   }
 
   #footer-two-widget-area {
-    grid-column: 2 / 3;
+    grid-area: footer-column-two;
   }
 
   #footer-three-widget-area {
-    grid-column: 3 / 4;
+    grid-area: footer-column-three;
   }
 
   #footer-four-widget-area {
-    grid-column: 4 / 5;
+    grid-area: footer-column-four;
+  }
+}
+
+@media (min-width: 64em) {
+  body.has-right-sidebar.has-left-sidebar .site-main {
+    grid-gap: 4em 2em;
+    grid-template-areas: "left-sidebar content right-sidebar";
+  }
+
+  #above-content-widget-area,
+  #footer-top-widget-area {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #footer-widget-areas {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: 
+      "footer-column-one footer-column-two footer-column-three footer-column-four";
+  }
+}
+
+@media (min-width: 82em) {
+  .site-container > * {
+    padding: 1em calc((100% - 80em) / 2);
   }
 }

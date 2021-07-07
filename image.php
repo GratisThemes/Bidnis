@@ -3,8 +3,7 @@
  * Template for displaying Attachments
  *
  * @package Bidnis
- * @since 1.0.0
- * @version 1.2.0
+ * @since   Bidnis 1.0
  */
 ?>
 
@@ -13,35 +12,35 @@
 <main id="site-main" role="main">
 
   <?php while ( have_posts() ): the_post(); ?>
+    <section class="content-container">
 
-    <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <?php get_template_part( 'template-parts/header', 'entry' ); ?>
+        <?php get_template_part( 'template-parts/header', 'entry' ); ?>
       
-      <article class="entry-content">
+        <section class="entry-content">
 
-        <figure class="entry-attachment wp-block-image">
+          <figure class="entry-attachment wp-block-image">
           
-          <?php echo wp_get_attachment_image( get_the_ID(), 'large' ); ?>
+            <?php echo wp_get_attachment_image( get_the_ID(), 'large' ); ?>
 
-          <figcaption class="wp-caption-text"><?php the_excerpt(); ?></figcaption>
+            <figcaption class="wp-caption-text"><?php the_excerpt(); ?></figcaption>
 
-        </figure><!-- .entry-attackment -->
+          </figure><!-- .entry-attackment -->
 
-        <?php the_content(); ?>
+          <?php the_content(); ?>
 
-        <?php
-        wp_link_pages( array(
-          'before' => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
-          'after' => '</div>',
-          'link_before' => '<span class="page-number">',
-          'link_after' => '</span>',
-        ) );
-        ?>
-      
-      </article><!-- .entry-content -->
+          <?php
+          wp_link_pages( array(
+            'before' => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
+            'after' => '</div>',
+            'link_before' => '<span class="page-number">',
+            'link_after' => '</span>',
+          ) );
+          ?>
+        </section><!-- .entry-content -->
 
-    </section>
+    </article>
 
     <footer class="entry-footer">
       
@@ -63,6 +62,6 @@
     
   <?php endwhile; ?>
 
-</main><!-- #site-main -->
+</main><!-- .site-main -->
 
 <?php get_footer(); ?>

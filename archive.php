@@ -3,18 +3,17 @@
  * Template for displaying archives
  *
  * @package Bidnis
- * @since 1.0.0
- * @version 1.2.0
+ * @since   Bidnis 1.0
  */
 ?>
 
 <?php get_header(); ?>
 
-<div id="main-content-container" class="wrapper">
+<main class="site-main" role="main">
 
   <?php get_sidebar( 'left' ); ?>
 
-  <main id="site-main" role="main">
+  <section class="content-container">
 
     <header class="page-header">
       <?php the_archive_title( '<h1>', '</h1>' ); ?>
@@ -54,10 +53,10 @@
 
     <?php endif;?>
     
-  </main><!-- #site-main -->
+  </section><!-- .content-container -->
 
   <?php get_sidebar(); ?>
 
-</div><!-- #main-content-continer -->
+</main><!-- .site-main -->
 
 <?php get_footer(); ?>
