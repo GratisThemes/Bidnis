@@ -37,25 +37,6 @@
   margin-top: 1em;
 }
 
-#bidnis-phone::before,
-#bidnis-email::before {
-  font-family: 'Font Awesome 5 Free';
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  padding-right: .25em;
-}
-
-#bidnis-phone::before {
-  content: '\f095';
-}
-
-#bidnis-email::before {
-  content: '\f0e0';
-}
-
 #social-links {
   display: flex;
   flex-wrap: wrap;
