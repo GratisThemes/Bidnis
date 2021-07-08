@@ -35,12 +35,11 @@ function bidnis_scripts() {
 
   $css = '
     :root {
-      --color-bg: %1$s; 
+      --background-color: %1$s; 
       --color-scheme: %2$s; 
-      --color-text: %3$s;
-      --color-anchor: %5$s;
-      --color-border: %2$s;
-      --color-header-text: %4$s;
+      --text-color: %3$s;
+      --header-text-color: %4$s;
+      --anchor-color: %5$s;
     }
   ';
 

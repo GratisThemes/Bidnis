@@ -2,7 +2,7 @@
 .comments-area {
   display: grid;
   grid-template-columns: minmax(0, 100%);
-  border-top: 0.0625em solid var(--color-border);
+  border-top: 0.0625em solid var(--color-scheme);
 }
 
 .comments-title {
@@ -31,7 +31,7 @@
 .comment,
 .pingback {
   list-style: none;
-  border-top: 0.0625em solid var(--color-border);
+  border-top: 0.0625em solid var(--color-scheme);
   padding: 1em 0;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .comment-reply-link {
-  border: 0.0625em solid var(--color-border);
+  border: 0.0625em solid var(--color-scheme);
   text-decoration: none;
   padding: .25em .5em;
   transition: .3s ease-in-out;
@@ -84,7 +84,7 @@
 }
 
 .comment-respond {
-  border-top: 0.0625em solid var(--color-border);
+  border-top: 0.0625em solid var(--color-scheme);
   margin-top: 1em;
   padding: 1em 0;
 

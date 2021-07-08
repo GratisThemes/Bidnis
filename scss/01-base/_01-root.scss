@@ -1,15 +1,28 @@
 /* 1.1 Base: Root */
 :root {
-  --font-family: 'Open Sans', sans-serif;
-  --font-size: 11pt;
+  --color-white:  #FFFFFF;
+  --color-black:  #191919;
+  --color-gray:   #EAEAEA;
+  --color-scheme: #FFD200;
 
-  --color-bg:          #FFFFFF;
-  --color-scheme:      #FFD200;
-  --color-text:        #191919;
-  --color-anchor:      #191919;
-  --color-border:      #191919;
-  --color-highlight:   #EAEAEA;
-  --color-header-text: #191919;
+  --font-family:         'Open Sans', sans-serif;
+  --font-size:           1rem;
+  --font-style:          normal;
+  --font-weight--thin:   300;
+  --font-weight--normal: 400;
+  --font-weight--bold:   600;
+  --font-weight--xbold:  700;
+  --font-weight--xxbold: 800;
+
+  --border-width:  0.0625em;
+  --border-style:  solid;
+  --border-color:  var(--color-black);
+  --border-radius: 0.125em;
+
+  --background-color:  var(--color-white);
+  --text-color:        var(--color-black);
+  --header-text-color: var(--color-black);
+  --anchor-color:      var(--color-black);
 
   font-size: var(--font-size);
 }

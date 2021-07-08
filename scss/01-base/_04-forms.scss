@@ -23,7 +23,7 @@ input[type="search"],
 textarea,
 select {
   padding: .5em;
-  border: 0.0625em solid var(--color-border);
+  border: 0.0625em solid var(--color-scheme);
 }
 
 /* iOS not respecting border-radius */
@@ -36,8 +36,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 button {
-  background-color: var(--color-bg);
-  border: 0.0625em solid var(--color-border);
+  background-color: var(--background-color);
+  border: 0.0625em solid var(--color-scheme);
   padding: .5em;
   cursor: pointer;
   transition: .3s ease-in-out;

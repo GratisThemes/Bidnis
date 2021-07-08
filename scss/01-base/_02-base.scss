@@ -1,7 +1,7 @@
 /* 1.2 Base: Base */
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: var(--font-family);
   word-wrap: break-word;
 }
@@ -49,7 +49,7 @@ p {
 
 blockquote {
   font-style: italic;
-  border-left: 0.25em solid var(--color-border);
+  border-left: 0.25em solid var(--color-scheme);
   padding-left: .5em;
   margin: 0 0 1.5em 1em;
 }
@@ -57,7 +57,7 @@ blockquote {
 table,
 td,
 th {
-  border: 0.0625em solid var(--color-border);
+  border: 0.0625em solid var(--color-scheme);
 }
 
 table {
@@ -100,7 +100,7 @@ address {
 }
 
 a {
-  color: var(--color-anchor);
+  color: var(--anchor-color);
   text-decoration: underline;
 }
 
@@ -117,8 +117,8 @@ cite {
 }
 
 code {
-  background-color: var(--color-highlight);
-  color: var(--color-text);
+  background-color: var(--color-gray);
+  color: var(--text-color);
   padding: 0 .25em;
 }
 
@@ -126,19 +126,19 @@ hr {
   width: 100%;
   border: none;
   height: 0.0625em;
-  background-color: var(--color-border);
+  background-color: var(--color-scheme);
 }
 
 ins {
   text-decoration: none;
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: var(--color-black);
+  color: var(--color-white);
   padding: 0 .25em;
 }
 
 pre {
-  background-color: var(--color-highlight);
-  border: 0.0625em dotted var(--color-border);
+  background-color: var(--color-gray);
+  border: 0.0625em dotted var(--color-scheme);
   border-radius: 0.1875em;
   max-width: 100%;
   overflow: auto;
