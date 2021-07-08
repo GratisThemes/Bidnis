@@ -1,0 +1,42 @@
+/* 3.1 Components: Entry header */
+.page-header,
+.entry-header {
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-gap: .5em;
+
+  h1,
+  h3 {
+    border-bottom: 0.0625em solid var(--color-border);
+    margin: 0;
+    padding: 0 0 .125em;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sticky .entry-header h3::before {
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  padding-right: .25em;
+}
+
+.sticky .entry-header h3::before {
+  content: '\f08d';
+  font-weight: 900;
+}

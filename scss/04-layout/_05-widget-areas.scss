@@ -1,0 +1,59 @@
+/* 4.5 Layout: Widget areas */
+#footer-widget-areas,
+.widget-area {
+  > * + * {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 48em) {
+  #footer-widget-areas,
+  .widget-area {
+    > * + * {
+      margin-top: 0;
+    }
+  }
+
+  #above-content-widget-area,
+  #footer-top-widget-area,
+  #footer-widget-areas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 2em;
+  }
+
+  #footer-widget-areas {
+    grid-template-areas: 
+      "footer-column-one footer-column-two"
+      "footer-column-three footer-column-four";
+  }
+
+  #footer-one-widget-area {
+    grid-area: footer-column-one;
+  }
+
+  #footer-two-widget-area {
+    grid-area: footer-column-two;
+  }
+
+  #footer-three-widget-area {
+    grid-area: footer-column-three;
+  }
+
+  #footer-four-widget-area {
+    grid-area: footer-column-four;
+  }
+}
+
+@media (min-width: 64em) {
+  #above-content-widget-area,
+  #footer-top-widget-area {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #footer-widget-areas {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: 
+      "footer-column-one footer-column-two footer-column-three footer-column-four";
+  }
+}

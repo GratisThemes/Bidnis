@@ -15,88 +15,53 @@
   Bidnis distributed under the terms of the GNU GPL v3
 */
 
-/* Table of Contents
-  -------------------------------
-   1.0 Normalize
-   2.0 Variables
-   3.0 Layout
-   4.0 Tags and Elements
-     4.1 Form elements
-     4.2 Media
-   5.0 Navigation
-     5.1 Header
-     5.2 Footer
-   6.0 Site header
-   7.0 Content
-     7.1 Headers
-     7.2 Thumbnails
-     7.3 Alignment
-     7.4 Post formats
-     7.5 Footers
-   8.0 Comments
-   9.0 Widgets
-  10.0 Site footer
-  11.0 Accessibility
-
-  -------------------------------
+/*
+Table of Contents
+-------------------------------
+0.0 Normalize
+1.0 Base
+  1.1 Root
+  1.2 Base
+  1.3 Media
+  1.4 Forms
+2.0 Helper classes
+  2.1 Alignment
+3.0 Components
+  3.1 Entry header
+  3.2 Entry meta
+  3.3 Post thumbnail
+  3.4 read-more-link
+  3.5 Author bio
+  3.6 Entry footer
+4.0 Layout
+  4.1 Base
+  4.2 Site container
+  4.3 Site main
+  4.4 Content container
+5.0 Navigation
+  5.1 Header nav
+  5.2 Footer nav
+  5.3 Nav links
+6.0 Site-header
+7.0 Content
+  7.1 Base
+  7.1 Content headers
+  7.2 Post formats
+8.0 Comments
+09.0 Widgets
+10.0 Site footer
+11.0 Accessibility
 */
 
-/* 1.0 Normalize */
-@import "normalize";
-
-/* 2.0 Variables */
-@import "variables";
-
-/* 3.0 Layout */
-@import "layout";
-
-/* 4.0 Tags and Elements */
-@import "tags-and-elements";
-
-/* 4.1 Tags and Elements: Form elements */
-@import "form-elements";
-
-/* 4.2 Tags and Elements: Media */
-@import "media";
-
-/* 5.0 Navigation */
-@import "navigation";
-
-/* 5.1 Navigation: Header */
-@import "navigation-header";
-
-/* 5.2 Navigation: Footer */
-@import "navigation-footer";
-
-/* 6.0 Site header */
-@import "site-header";
-
-/* 7.0 Content */
-@import "content";
-
-/* 7.1 Content: Headers */
-@import "content-headers";
-
-/* 7.2 Content: Post thumbnail */
-@import "content-post-thumbnail";
-
-/* 7.3 Content: Alignment */
-@import "content-alignment";
-
-/* 7.4 Content: Post formats */
-@import "content-post-formats";
-
-/* 7.5 Content: Footers */
-@import "content-footers";
-
-/* 8.0 Comments */
-@import "comments";
-
-/* 9.0 Widgets */
-@import "widgets";
-
-/* 10.0 Site footer */
-@import "site-footer";
-
-/* 11.0 Accessibility */
-@import "accessibility";
+@import "00-normalize";
+@import "01-base";
+@import "02-helper-classes";
+@import "03-components";
+@import "04-layout";
+@import "05-navigation";
+@import "06-site-header";
+@import "07-post-formats";
+@import "08-comments";
+@import "09-widgets";
+@import "10-site-footer";
+@import "11-accessibility";

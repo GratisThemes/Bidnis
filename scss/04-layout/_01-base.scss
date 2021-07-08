@@ -1,0 +1,15 @@
+/* 4.1 Layout: Base*/
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  line-sizing: normal; 
+}
+
+body {
+  min-height: 100vh;
+}

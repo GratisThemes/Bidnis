@@ -1,16 +1,4 @@
-.entry-footer {
-  display: grid;
-  grid-gap: 2em;
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
+/* 3.5 Components: Author bio */
 .author-bio {
   display: grid;
   grid-template-columns: 50px minmax(0, 1fr);
