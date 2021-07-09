@@ -1,7 +1,12 @@
 /* 6.0 Site header*/
-#site-header {
+.site-header {
   background-color: var(--color-scheme);
   color: var(--header-text-color);
+  text-align: center;
+
+  > * + * {
+    margin-top: 1em;
+  }
 
   a {
     text-decoration: none;
@@ -9,49 +14,41 @@
   }
 }
 
-#site-branding {
-  display: grid;
-  grid-template-columns: minmax(0px, 100%);
-  text-align: center;
-  font-weight: 800;
+.site-branding {
+  &__title,
+  &__tagline {
+    margin: 0;
+    font-weight: var(--font-weight--xxbold);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+  }
+
+  &__tagline {
+    font-size: 0.8rem;
+  }
 }
 
-.site-title,
-.site-tagline {
-  text-transform: uppercase;
+.bidnis-phone,
+.bidnis-email {
+  font-weight: var(--font-weight--bold);
 }
 
-.site-title {
-  text-decoration: none;
-  font-size: 2.2rem;
-}
-
-.site-tagline {
-  font-size: .8rem;
-}
-
-#bidnis-phone-email {
-  display: grid;
-  justify-content: center;
-  font-weight: 600;
-  grid-gap: .5em;
-  margin-top: 1em;
-}
-
-#social-links {
+.social-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1em;
   gap: 0.5em;
 
   a {
-    background-color: #191919;
-    color: #FFFFFF;
-    border-radius: 0.125em;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.15em;
+    border-radius: var(--border-radius);
     width: 1.5em;
     height: 1.5em;
-    padding: 0.15em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,34 +61,29 @@
 }
 
 @media (min-width: 48em) {
-  #site-header {
-    display: grid;
-    grid-template-columns: minmax(300px, 1fr) repeat(2, minmax(0, auto));    
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    grid-gap: 1em;
+    justify-content: flex-end;
+    column-gap: 1em;
     order: -1;
+
+    * {
+      margin: 0;
+    }
   }
   
-  #site-branding {
+  .site-branding {
+    flex-shrink: 0;
+    flex-grow: 1;
     text-align: left;
   }
 
-  #bidnis-phone-email {
-    margin: -.5em 0 0;
-    grid-template-columns: repeat(2, minmax(0, auto));
-    grid-gap: 1em;
-  }
-
-  #bidnis-phone,
-  #bidnis-email {
-    line-height: 1.5em;
-  }
-
-  #social-links {
+  .social-links {
+    max-width: 26em;
     margin: 0;
     justify-content: flex-end;
-    max-width: 30em;
-    max-height: 4.1em;
   }
 
   #header-image-container {

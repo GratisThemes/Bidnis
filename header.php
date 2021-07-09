@@ -34,29 +34,4 @@
 
     <?php get_template_part( 'template-parts/header-nav' ); ?>
 
-    <header id="site-header">
-      <div id="site-branding">
-        <?php
-        if ( function_exists( 'the_custom_logo' ) ) {
-          the_custom_logo();
-        }
-        ?>
-
-        <?php if ( get_theme_mod( 'display_site_title', true ) ) : ?>
-          <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>">
-            <?php bloginfo( 'name' ); ?>
-          </a><!-- .site-title -->
-        <?php endif; ?>
-
-
-        <?php if ( get_theme_mod( 'display_tagline', true ) ) : ?>
-          <span class="site-tagline">
-            <?php bloginfo( 'description' ); ?>
-          </span><!-- .site-tagline -->
-        <?php endif; ?>
-      </div><!-- #site-branding -->
-
-      <?php bidnis_phone_email(); ?>
-
-      <?php bidnis_social_links(); ?>
-    </header><!-- #site-header -->
+    <?php get_template_part( 'template-parts/site-header' ); ?>
