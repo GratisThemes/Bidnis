@@ -43,14 +43,12 @@ Table of Contents
   5.2 Footer nav
   5.3 Nav links
 6.0 Site-header
-7.0 Content
-  7.1 Base
-  7.1 Content headers
-  7.2 Post formats
-8.0 Comments
-09.0 Widgets
-10.0 Site footer
-11.0 Accessibility
+7.0 Hero
+8.0 Post formats
+9.0 Comments
+10.0 Widgets
+11.0 Site footer
+12.0 Accessibility
 */
 
 @import "00-normalize";
@@ -60,8 +58,9 @@ Table of Contents
 @import "04-layout";
 @import "05-navigation";
 @import "06-site-header";
-@import "07-post-formats";
-@import "08-comments";
-@import "09-widgets";
-@import "10-site-footer";
-@import "11-accessibility";
+@import "07-hero";
+@import "08-post-formats";
+@import "09-comments";
+@import "10-widgets";
+@import "11-site-footer";
+@import "12-accessibility";

@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/header_image' ); ?>
+<?php get_template_part( 'template-parts/hero' ); ?>
 
 <?php get_sidebar( 'above' ); ?>
 
