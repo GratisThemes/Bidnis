@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx gulp dev",
     "build": "npx gulp build",
+    "css": "npx gulp css",
+    "pot": "npx gulp pot",
     "phpcs": "phpcs --standard=./phpcs.xml --ignore=*/node_modules/*,*/assets/* --tab-width=2 -s .; exit 0;"
   },
   "repository": {
