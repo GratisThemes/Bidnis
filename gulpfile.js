@@ -21,7 +21,7 @@ const info = {
 function css() { 
   return gulp.src('./scss/*.scss')
     .pipe(plumber())
-    .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }))
+    .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }).on('error', sass.logError))
     .pipe(prefix(['last 30 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('./'))
 }
@@ -62,9 +62,11 @@ function package() {
 
 // Watch
 function watch() {
-  gulp.watch('scss/*.scss', {cwd: './', usePolling: true}, css)
-  gulp.watch('**/*.php',    {cwd: './', usePolling: true}, pot)
+  gulp.watch('scss/**/*.scss', {cwd: './', usePolling: true}, css)
+  gulp.watch('**/*.php',       {cwd: './', usePolling: true}, pot)
 }
 
+module.exports.css   = css
+module.exports.pot   = pot
 module.exports.dev   = gulp.series(css, pot, watch)
 module.exports.build = gulp.series(css, pot, package)
