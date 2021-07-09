@@ -32,26 +32,7 @@
 
   <div class="site-container">
 
-    <?php if ( has_nav_menu( 'header' ) ) : ?>
-      <div id="header-nav-container">
-        <input type="checkbox" id="header-nav-toggle" />
-
-        <label for="header-nav-toggle" id="header-nav-toggle-label">
-          <span></span>
-          <span class="screen-reader-text"><?php esc_html_e( 'Toggle menu', 'bidnis' ); ?></span>
-        </label><!-- #header-nav-toggle-label -->
-
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'header',
-            'menu_id'        => 'header-nav',
-            'container'      => false,
-          )
-        );
-        ?>
-      </div><!-- #header-nav-container -->
-    <?php endif; ?>
+    <?php get_template_part( 'template-parts/header-nav' ); ?>
 
     <header id="site-header">
       <div id="site-branding">
