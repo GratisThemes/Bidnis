@@ -5,17 +5,17 @@
  * @package Bidnis
  * @since   Bidnis 1.0
  */
+
 ?>
 <article class="no-results not-found">
-  
-  <section class="entry-content">
-    
+
+  <section class="entry-content">    
     <p>
-      <?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'bidnis' ); ?>
+      <?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'bidnis' ); ?>
     </p>
-    
+
     <?php get_search_form(); ?>
-  
+
   </section><!-- .entry-content -->
 
 </article><!-- .no-results.not-found -->

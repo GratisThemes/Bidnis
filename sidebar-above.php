@@ -6,12 +6,12 @@
  * @since Bidnis 1.0.0
  */
 
-if ( is_active_sidebar( 'above-content-widget-area' )  ) : ?>
-  
+if ( is_active_sidebar( 'above-content-widget-area' ) ) : ?>
+
   <div id="above-content-widget-area" class="widget-area wrapper" role="complementary">
-  
+
     <?php dynamic_sidebar( 'above-content-widget-area' ); ?>
-  
+
   </div><!-- #above-content-widget-area -->
 
 <?php endif; ?>
