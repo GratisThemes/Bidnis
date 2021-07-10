@@ -3,14 +3,14 @@
  * Filters for body_class().
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**
  * Add classes to the body depending on customize settings.
  *
- * @param Array $classes [Body class names].
- * @return Array $classes [Body class names].
+ * @param array $classes [Body class names].
+ * @return array $classes [Body class names].
  */
 function bidnis_body_class( $classes ) {
 

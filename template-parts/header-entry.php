@@ -3,7 +3,7 @@
  * Template for displaying entry headers
  *
  * @package Bidnis
- * @since 1.2.0
+ * @since   Bidnis 1.2
  */
 
 ?>

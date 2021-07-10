@@ -3,7 +3,7 @@
  * Template for displaying comments
  *
  * @package Bidnis
- * @since   Bidnis 1.0.0
+ * @since   Bidnis 1.0
  */
 
 ?>

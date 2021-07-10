@@ -3,7 +3,7 @@
  * Social media links
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**
@@ -37,7 +37,7 @@ $bidnis_social_icons = array(
 );
 
 /**
- * Formated social media elements.
+ * Formated social media elements
  */
 function bidnis_social_links() {
   global $bidnis_social_icons;

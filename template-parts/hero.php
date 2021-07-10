@@ -3,7 +3,7 @@
  * The template part for displaying the header image, text and call-to-action
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 if ( ! is_home() && ! is_front_page() ) {

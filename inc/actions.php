@@ -1,6 +1,6 @@
 <?php
 /**
- * Various actions to add assets and features to the site.
+ * Various actions to add assets and features to the site
  *
  * @package Bidnis
  * @since   Bidnis 2.0

@@ -3,7 +3,7 @@
  * Template for displaying entry footers
  *
  * @package Bidnis
- * @since 1.2.0
+ * @since   Bidnis 1.2
  */
 
 ?>

@@ -3,14 +3,14 @@
  * Filters for escerpt_more().
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**
- * Adds custom "Read more" element.
+ * Adds custom "Read more" element
  *
- * @param String $more_string (Read more string).
- * @return String
+ * @param string $more_string (Read more string).
+ * @return string
  */
 function bidnis_excerpt_more( $more_string ) {
   if ( is_admin() ) {

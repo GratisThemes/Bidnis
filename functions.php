@@ -3,7 +3,7 @@
  * Theme functions and definitions
  *
  * @package Bidnis
- * @since   Bidnis 1.0.0
+ * @since   Bidnis 1.0
  */
 
 if ( ! function_exists( 'bidnis_setup' ) ) {

@@ -3,7 +3,7 @@
  * Template for displaying the sidebar widget area
  *
  * @package Bidnis
- * @since 1.0.0
+ * @since   Bidnis 1.0
  */
 
 ?>

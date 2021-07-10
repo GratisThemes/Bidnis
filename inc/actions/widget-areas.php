@@ -3,7 +3,7 @@
  * Widget areas
  *
  * @package Bidnis
- * @since  1.0.0
+ * @since   Bidnis 1.0
  */
 
 /**

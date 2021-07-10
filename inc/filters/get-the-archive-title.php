@@ -1,16 +1,16 @@
 <?php
 /**
- * Filters for get_the_archive_title().
+ * Filters for get_the_archive_title()
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**
- * Remove prefix from archive titles.
+ * Remove prefix from archive titles
  *
- * @param  String $title Archive title with prefix.
- * @return String $title Archive title without prefix.
+ * @param string $title Archive title with prefix.
+ * @return string $title Archive title without prefix.
  */
 function bidnis_get_the_archive_title( $title ) {
   if ( is_category() ) {

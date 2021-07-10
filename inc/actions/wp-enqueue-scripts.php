@@ -3,11 +3,11 @@
  * The wp_enqueue_scripts hook.
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**
- * Enqueue scripts, styles and fonts.
+ * Enqueue scripts, styles and fonts
  */
 function bidnis_wp_enqueue_scripts() {
 

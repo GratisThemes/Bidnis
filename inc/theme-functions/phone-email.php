@@ -3,7 +3,7 @@
  * Phone and E-mail
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 /**

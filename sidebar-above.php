@@ -3,7 +3,7 @@
  * Template for displaying a widget area and additional content
  *
  * @package Bidnis
- * @since Bidnis 1.0.0
+ * @since   Bidnis 1.0
  */
 
 if ( is_active_sidebar( 'above-content-widget-area' ) ) : ?>

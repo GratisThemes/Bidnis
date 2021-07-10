@@ -3,7 +3,7 @@
  * Template for displaying the Site's main navigation
  *
  * @package Bidnis
- * @since   Bidnis 2.0.0
+ * @since   Bidnis 2.0
  */
 
 ?>
