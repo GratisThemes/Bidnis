@@ -1,9 +1,9 @@
 <?php
 /**
- * Template for displaying songle post content
+ * Template for displaying single posts or pages
  *
  * @package Bidnis
- * @since   Bidnis 1.0
+ * @since   Bidnis 2.0
  */
 
 ?>
@@ -17,9 +17,10 @@
   <section class="content-container">
 
     <?php while ( have_posts() ) : ?>
+
       <?php the_post(); ?>
 
-      <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+      <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
 
       <?php
       if ( comments_open() || get_comments_number() ) {

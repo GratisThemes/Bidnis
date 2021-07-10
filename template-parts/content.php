@@ -35,8 +35,7 @@
       )
     );
     ?>
-
-    </section><!-- .entry-content -->
+  </section><!-- .entry-content -->
 
   <?php
   if ( is_single() ) {
