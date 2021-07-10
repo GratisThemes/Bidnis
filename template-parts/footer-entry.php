@@ -10,9 +10,7 @@
 <footer class="entry-footer">
 
   <?php if ( has_tag() && get_theme_mod( 'entry_meta_tags', true ) ) : ?>
-    <span class="entry-meta-tags">
-      <?php the_tags( '', ', ' ); ?>
-    </span><!-- .entry-meta-tags -->
+    <?php the_tags( '<div class="entry-meta-tags">', '', '</div><!-- .entry-meta-tags -->' ); ?>
   <?php endif; ?>
 
   <?php get_template_part( 'template-parts/author-bio' ); ?>
