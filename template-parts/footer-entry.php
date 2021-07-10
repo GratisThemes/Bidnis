@@ -15,27 +15,7 @@
     </span><!-- .entry-meta-tags -->
   <?php endif; ?>
 
-  <?php if ( get_theme_mod( 'author_bio', true ) ) : ?>
-    <div class="author-bio">
-      <?php echo get_avatar( get_the_author_meta( 'user_email' ), '50' ); ?>
-
-      <div>
-        <?php
-        printf(
-          /* translators: %s: Author's name */
-          '<span>' . esc_html__( 'Author: %s', 'bidnis' ) . '</span>',
-          sprintf(
-            '<a href="%1$s">%2$s</a>',
-            esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-            get_the_author()
-          )
-        );
-        ?>
-
-        <p><?php the_author_meta( 'description' ); ?></p>
-      </div>
-    </div><!-- .author-bio -->
-  <?php endif; ?>
+  <?php get_template_part( 'template-parts/author-bio' ); ?>
 
   <?php
   the_post_navigation(
