@@ -2,96 +2,72 @@
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  a,
-  a:hover {
-    text-decoration: none !important;
-    color: var(--color-text);
-  }
+  justify-content: center;
+  gap: 1em;
 }
 
 .nav-previous,
-.nav-next {
-  border: 0.0625em solid var(--color-border);
-  padding: .25em .5em;
-  transition: .3s ease-in-out;
+.nav-next,
+.page-numbers:not(.dots) {
+  background-color: var(--color-white);
+  border: var(--border-width) var(--border-style) var(--color-scheme);
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-scheme);
   }
+}
+
+.nav-previous a,
+.nav-next a,
+.page-numbers:not(.dots) {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+}
+
+.page-numbers:last-child:not(.next),
+.page-numbers.prev {
+  margin-right: auto;
+}
+
+.page-numbers:first-child:not(.prev),
+.page-numbers.next {
+  margin-left: auto;
+}
+
+.page-numbers:not(.prev, .next) {
+  display: none;
+}
+
+.page-numbers.dots {
+  padding: 0.5em 0.5em 0;
+}
+
+.page-numbers.current {
+  background-color: var(--color-scheme);
 }
 
 .nav-previous {
-  margin-right: .5em;
+  margin-right: auto;
+  a::before {
+    content: '🠔';
+    margin-right: 0.5em;
+  }
 }
 
 .nav-next {
-  text-align: right;
-}
-
-.nav-previous::before,
-.nav-next::after {
-  font-family: 'Font Awesome 5 Free';
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-weight: 900;
-}
-
-.nav-previous::before {
-  padding-right: .5em;
-  content: '\f30a';
-}
-
-.nav-next::after {
-  padding-left: .5em;
-  content: '\f30b';
-}
-
-.pagination .nav-links {
-  display: flex;
-  justify-content: center;
-
-  > * {
-    margin: 0 1em;
-  }
-
-  .page-numbers.current {
-    font-weight: 600;
+  margin-left: auto;
+  a::after {
+    content: '🠖';
+    margin-left: 0.5em;
   }
 }
 
-.page-links,
-.pagination .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  
-  > * {
-    border: 0.0625em solid var(--color-border);
-    padding: .25em .5em;
-    margin: 0 0 .5em .5em;
-  }
-
-  > a {
-    text-decoration: none;
-    transition: .3s ease-in-out;
-  }
-
-  > span,
-  > a:hover {
-    background-color: var(--color-scheme);
-  }
-}
-
-.pagination .nav-links {
-  justify-content: space-between;
-
-  .dots {
-    background-color: transparent;
-    border: none;
+@media (min-width: 28em) {
+  .page-numbers:not(.prev, .next) {
+    display: block;
   }
 }

@@ -28,25 +28,7 @@
         <?php get_template_part( 'template-parts/content', 'excerpt' ); ?>
       <?php endwhile; ?>
 
-      <?php
-      if ( get_theme_mod( 'page_numbers', false ) ) {
-        the_posts_pagination(
-          array(
-            'prev_text'          => __( 'Previous page', 'bidnis' ),
-            'next_text'          => __( 'Next page', 'bidnis' ),
-            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'bidnis' ) . ' </span>',
-          )
-        );
-
-      } else {
-        the_posts_navigation(
-          array(
-            'prev_text' => __( 'Older', 'bidnis' ),
-            'next_text' => __( 'Newer', 'bidnis' ),
-          )
-        );
-      }
-      ?>
+      <?php bidnis_the_posts_navigation(); ?>
 
     <?php else : ?>
 
