@@ -7,6 +7,16 @@
  */
 
 /**
- * The wp_enqueue_scripts hook.
+ * The wp_enqueue_scripts hook
  */
 require get_template_directory() . '/inc/actions/wp-enqueue-scripts.php';
+
+/**
+ * Widgets areas
+ */
+require get_template_directory() . '/inc/actions/widget-areas.php';
+
+/**
+ * WP Customizer settings
+ */
+require get_template_directory() . '/inc/actions/customizer.php';

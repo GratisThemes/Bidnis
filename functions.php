@@ -129,14 +129,8 @@ if ( ! function_exists( 'bidnis_setup' ) ) {
 // Actions.
 require_once get_template_directory() . '/inc/actions.php';
 
-// Widgets areas.
-require_once get_template_directory() . '/inc/widget-areas.php';
-
 // Filters.
 require_once get_template_directory() . '/inc/filters.php';
-
-// WP Customizer settings.
-require_once get_template_directory() . '/inc/customizer.php';
 
 // Theme specific functions.
 require_once get_template_directory() . '/inc/theme-functions.php';
