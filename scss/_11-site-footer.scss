@@ -1,83 +1,61 @@
 /* 11.0 Site footer*/
-#site-footer-inner,
-#site-footer-information {
-  display: grid;
-  grid-gap: .5em;
-}
+.site-footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
 
-#site-footer {
-  background-color: #000000;
-  color: #FFFFFF;
-  font-size: .75rem;
-  text-align: center;
-
-  a { 
-    color: #FFFFFF;
+  > * + * {
+    margin-top: 2em;
+  }
+  
+  a {
+    color: var(--color-white);
     text-decoration: none;
-
+    
     &:hover {
       text-decoration: underline;
     }
   }
 }
 
-#site-footer-inner {
-  grid-gap: 2em; 
-}
+.site-footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
 
-#scroll-to-top {
-  background-color: #191919;
-  position: fixed;
-  bottom : -2000px;
-  right: 20px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  transition: bottom 1s ease-in-out, background-color .3s ease-in-out;
-
-  &::before,
-  &::after {
-    background-color: #FFFFFF;
-    position: absolute;
-    content: "";
-    width: 43%;
-    height: 2px;
-    transition: background-color .3s ease-in-out;
-  }
-
-  &::before {
-    top: 50%;
-    right: 15%;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    top: 50%;
-    left: 15%;
-    transform: rotate(-45deg);
-  }
-
-  &:hover {
-    background-color: var(--color-scheme);
-
-    &::before,
-    &::after {
-      background-color: var(--text-color);
-    }
+  > * + * {
+    padding-left: 0.5em;
+    border-left: var(--border-width) var(--border-style) var(--color-scheme);
   }
 }
 
-@media (min-width: 768px) {
-  #site-footer-information {
+.site-footer-info {
+  text-align: center;
+  font-size: 0.75rem;
+
+  > * + * {
+    display: block;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 48em) {
+  .site-footer-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1em;
 
-    > *:not(:last-child) {
-      border-right: 0.0625em solid var(--color-scheme);
-      padding-right: 0.5em;
-      margin-right: 0.5em;
+    > * + * {
+      margin-top: 0;
+      padding-left: 1em;
+      border-left: var(--border-width) var(--border-style) var(--color-scheme);
     }
   }
 }

@@ -1,0 +1,48 @@
+/* 3.7 Components: Scroll to top */
+#scroll-to-top {
+  background-color: var(--color-black);
+  position: fixed;
+  bottom : -2000px;
+  right: 2em;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  transition: bottom 1s ease-in-out, background-color .3s ease-in-out;
+
+  &::before,
+  &::after {
+    background-color: var(--color-white);
+    position: absolute;
+    content: "";
+    width: 43%;
+    height: 0.128em;
+    transition: background-color .3s ease-in-out;
+  }
+
+  &::before {
+    top: 50%;
+    right: 15%;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 50%;
+    left: 15%;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: var(--color-scheme);
+
+    &::before,
+    &::after {
+      background-color: var(--text-color);
+    }
+
+    > * + * {
+      display: block;
+      margin-top: 1em;
+    }
+  }
+}
