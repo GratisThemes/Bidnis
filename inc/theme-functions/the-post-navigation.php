@@ -1,26 +1,19 @@
 <?php
 /**
- * Template for displaying entry footers
+ * Post navigation
  *
  * @package Bidnis
- * @since   Bidnis 1.2
+ * @since   Bidnis 2.0
  */
 
-?>
-<footer class="entry-footer">
-
-  <?php if ( has_tag() && get_theme_mod( 'entry_meta_tags', true ) ) : ?>
-    <?php the_tags( '<div class="entry-meta-tags">', '', '</div><!-- .entry-meta-tags -->' ); ?>
-  <?php endif; ?>
-
-  <?php get_template_part( 'template-parts/author-bio' ); ?>
-
-  <?php
+/**
+ * Wrapper function for showing navigation on the bottom of posts to make it reusable
+ */
+function bidnis_the_post_navigation() {
   the_post_navigation(
     array(
       'prev_text' => '<span class="screen-reader-text">' . __( 'Previous post', 'bidnis' ) . '</span><span>' . __( 'Previous', 'bidnis' ) . '</span><span>%title</span>',
       'next_text' => '<span class="screen-reader-text">' . __( 'Next post', 'bidnis' ) . '</span><span>' . __( 'Next', 'bidnis' ) . '</span><span>%title</span>',
     )
   );
-  ?>
-</footer><!-- .entry-footer -->
+}

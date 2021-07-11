@@ -1,0 +1,21 @@
+/* 3.6 Components: Entry tags */
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-size: 0.9rem;
+  
+  > a {
+    border: var(--border-width) var(--border-style) var(--color-scheme);
+    padding: 0.25em 0.5em;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      border-color: var(--color-scheme);
+      background-color: var(--color-scheme);
+      text-decoration: none;
+    }
+  }
+}

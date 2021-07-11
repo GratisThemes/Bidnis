@@ -36,9 +36,13 @@
     ?>
   </section><!-- .entry-content -->
 
-  <?php
-  if ( is_single() ) {
-    get_template_part( 'template-parts/footer', 'entry' );
-  }
-  ?>
+  <?php if ( is_single() ) : ?>
+    <?php if ( has_tag() && get_theme_mod( 'entry_meta_tags', true ) ) : ?>
+      <?php the_tags( '<div class="entry-tags">', '', '</div><!-- .entry-tags -->' ); ?>
+    <?php endif; ?>
+
+    <?php get_template_part( 'template-parts/author-bio' ); ?>
+
+    <?php bidnis_the_post_navigation(); ?>
+  <?php endif; ?>
 </article>

@@ -1,4 +1,4 @@
-/* 3.5 Components: Author bio */
+/* 3.7 Components: Author bio */
 .author-bio {
   text-align: center;
   max-width: 60ch;
@@ -8,6 +8,10 @@
   &__title,
   &__description {
     margin: 0;
+  }
+
+  &__title a {
+    text-decoration: none;
   }
 
   > * + * {

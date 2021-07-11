@@ -21,23 +21,3 @@
     gap: 1em;
   }
 }
-
-.entry-meta-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  font-size: 0.9rem;
-  
-  > a {
-    border: var(--border-width) var(--border-style) var(--color-gray);
-    padding: 0.25em 0.5em;
-    transition: all .3s ease-in-out;
-
-    &:hover,
-    &:focus {
-      border-color: var(--color-scheme);
-      background-color: var(--color-scheme);
-      text-decoration: none;
-    }
-  }
-}
