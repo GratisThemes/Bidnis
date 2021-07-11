@@ -23,7 +23,7 @@ if ( post_password_required() ) {
 
     printf(
       /* translators: %1$s: Comment count, %2$s: Article title. */
-      esc_html( _nx( '%1$s throught on "%2$s"', '%1$s throughts on "%2$s"', $bidnis_comments_number, 'comments title', 'reginald' ) ),
+      esc_html( _nx( '%1$s throught on "%2$s"', '%1$s throughts on "%2$s"', $bidnis_comments_number, 'comments title', 'bidnis' ) ),
       esc_html( number_format_i18n( $bidnis_comments_number ) ),
       esc_html( get_the_title() )
     );
