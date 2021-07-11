@@ -1,82 +1,25 @@
 /* 3.2 Components: Entry meta */
 .entry-meta {
-  display: grid;
-  grid-gap: .25em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
   font-size: .85rem;
 
+  i {
+    margin-right: 0.25em;
+  }
+
   a {
-    color: var(--anchor-color);
+    color: var(--text-color);
   }
 }
 
-.entry-meta > span::before,
-.post-edit-link::before {
-  font-family: 'Font Awesome 5 Free';
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  padding-right: .25em;
-}
-
-.entry-meta-author::before {
-  content: '\f007';
-}
-
-.entry-meta-date::before {
-  content: '\f073';
-}
-
-.entry-meta-comments::before {
-  content: '\f075';
-}
-
-.entry-meta-categories::before {
-  content: '\f07b';
-}
-
-.entry-meta-image-size::before {
-  content: '\f030';
-  font-weight: 900;
-}
-
-.format-gallery .entry-meta-post-format::before,
-.format-image .entry-meta-post-format::before {
-  content: '\f03e';
-}
-
-.format-audio .entry-meta-post-format::before {
-  content: '\f001';
-  font-weight: 900;
-}
-
-.format-video .entry-meta-post-format::before {
-  content: '\f03d';
-  font-weight: 900;
-}
-
-.format-aside .entry-meta-post-format::before {
-  content: '\f249';
-}
-
-.format-status .entry-meta-post-format::before {
-  content: '\f12a';
-  font-weight: 900;
-}
-
-.format-link .entry-meta-post-format::before {
-  content: '\f0c1';
-  font-weight: 900;
-}
-
-.format-quote .entry-meta-post-format::before {
-  content: '\f10e';
-  font-weight: 900;
-}
-
-.format-chat .entry-meta-post-format::before {
-  content: '\f086';
+@media (min-width: 48em) {
+  .entry-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
 }
 
 .entry-meta-tags {
@@ -95,22 +38,6 @@
       border-color: var(--color-scheme);
       background-color: var(--color-scheme);
       text-decoration: none;
-    }
-  }
-}
-
-.post-edit-link::before {
-  content: '\f303';
-  font-weight: 900;
-}
-
-@media (min-width: 1024px) {
-  .entry-meta {
-    display: flex;
-    flex-wrap: wrap;
-
-    > *:not(:last-child) {
-      margin-right: 1em;
     }
   }
 }

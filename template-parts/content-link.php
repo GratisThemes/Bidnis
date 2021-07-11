@@ -9,11 +9,17 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php
-  if ( is_single() ) {
-    get_template_part( 'template-parts/header', 'entry' );
-  }
-  ?>
+  <?php if ( is_single() ) : ?>
+    <header class="entry-header">
+      <?php bidnis_the_title(); ?>
+      <?php bidnis_entry_meta(); ?>
+      <?php bidnis_edit_post_link(); ?>
+    </header>
+  <?php elseif ( is_admin() ) : ?>
+    <header class="entry-header">
+      <?php bidnis_edit_post_link(); ?>
+    </header>
+  <?php endif; ?>
 
   <?php
   if ( '' !== get_the_post_thumbnail() && (

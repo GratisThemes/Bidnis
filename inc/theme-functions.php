@@ -7,6 +7,16 @@
  */
 
 /**
+ * The bidnis_edit_post_link function
+ */
+require get_template_directory() . '/inc/theme-functions/edit-post-link.php';
+
+/**
+ * The bidnis_entry_meta function
+ */
+require get_template_directory() . '/inc/theme-functions/entry-meta.php';
+
+/**
  * The bidnis_phone_email function
  */
 require get_template_directory() . '/inc/theme-functions/phone-email.php';
@@ -20,3 +30,8 @@ require get_template_directory() . '/inc/theme-functions/social-links.php';
  * The bidnis_the_posts_navigarion function
  */
 require get_template_directory() . '/inc/theme-functions/the-posts-navigation.php';
+
+/**
+ * The bidnis_the_title function
+ */
+require get_template_directory() . '/inc/theme-functions/the-title.php';

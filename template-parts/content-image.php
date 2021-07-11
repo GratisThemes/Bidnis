@@ -9,7 +9,11 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php get_template_part( 'template-parts/header', 'entry' ); ?>
+  <header class="entry-header">
+    <?php bidnis_the_title(); ?>
+    <?php bidnis_entry_meta(); ?>
+    <?php bidnis_edit_post_link(); ?>
+  </header>
 
   <?php
   if ( is_single() && '' !== get_the_post_thumbnail() && (
