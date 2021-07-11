@@ -17,7 +17,7 @@ if ( ! is_home() && ! is_front_page() ) {
       class="hero__image"
       width="<?php echo esc_attr( get_custom_header()->width ); ?>"
       height="<?php echo esc_attr( get_custom_header()->height ); ?>" 
-      alt="<?php esc_html_e( 'Header Image', 'bidnis' ); ?>" />
+      alt="<?php esc_attr_e( 'Header Image', 'bidnis' ); ?>" />
   <?php endif; ?>
 
   <?php
