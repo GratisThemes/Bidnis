@@ -11,7 +11,12 @@
 
   <?php if ( is_single() ) : ?>
     <header class="entry-header">
-      <?php bidnis_the_title(); ?>
+      <?php
+      if ( is_single() ) {
+        the_title( '<h1 class="entry-title">', '</h1>' );
+      }
+      ?>
+
       <?php bidnis_entry_meta(); ?>
       <?php bidnis_edit_post_link(); ?>
     </header>

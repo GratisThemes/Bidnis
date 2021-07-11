@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <header class="page-header">
-    <?php bidnis_the_title(); ?>
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <?php bidnis_edit_post_link(); ?>
   </header>
 

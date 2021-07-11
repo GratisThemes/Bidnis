@@ -10,6 +10,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <header class="entry-header">
+    <?php
+    if ( is_single() ) {
+      the_title( '<h1 class="entry-title">', '</h1>' );
+    }
+    ?>
+
     <?php bidnis_entry_meta(); ?>
     <?php bidnis_edit_post_link(); ?>
   </header>
