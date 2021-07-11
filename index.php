@@ -58,17 +58,17 @@ if ( is_search() ) {
         $bidnis_post_type   = get_post_type();
 
         if ( ( is_home() || is_front_page() || is_category() ) && $bidnis_post_format ) {
-          get_template_part( 'template-parts/content', $bidnis_post_format );
+          get_template_part( 'template-parts/content/content', $bidnis_post_format );
         } elseif ( is_search() || ! get_theme_mod( 'display_content', false ) ) {
-          get_template_part( 'template-parts/content', 'excerpt' );
+          get_template_part( 'template-parts/content/content', 'excerpt' );
         } else {
-          get_template_part( 'template-parts/content', $bidnis_post_type );
+          get_template_part( 'template-parts/content/content', $bidnis_post_type );
         }
       }
 
       bidnis_the_posts_navigation();
     } else {
-      get_template_part( 'template-parts/content', 'none' );
+      get_template_part( 'template-parts/content/content', 'none' );
     }
     ?>
 
