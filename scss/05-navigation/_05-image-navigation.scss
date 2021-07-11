@@ -1,0 +1,31 @@
+.image-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+
+  &__previous a,
+  &__next a {
+    display: block;
+    background-color: var(--color-white);
+    border: var(--border-width) var(--border-style) var(--color-scheme);
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    transition: background-color .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-scheme);
+    }
+  }
+}
+
+@media (min-width: 28em) {
+  .image-nav {
+    justify-content: space-between;
+
+    &__next {
+      margin-left: auto;
+    }
+  }
+}

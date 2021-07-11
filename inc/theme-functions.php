@@ -27,21 +27,6 @@ require get_template_directory() . '/inc/theme-functions/phone-email.php';
 require get_template_directory() . '/inc/theme-functions/social-links.php';
 
 /**
- * The bidnis_the_post_navigation function
- */
-require get_template_directory() . '/inc/theme-functions/the-post-navigation.php';
-
-/**
  * The bidnis_the_post_thumbnail function
  */
 require get_template_directory() . '/inc/theme-functions/the-post-thumbnail.php';
-
-/**
- * The bidnis_the_posts_navigarion function
- */
-require get_template_directory() . '/inc/theme-functions/the-posts-navigation.php';
-
-/**
- * The bidnis_wp_link_pages function
- */
-require get_template_directory() . '/inc/theme-functions/wp-link-pages.php';

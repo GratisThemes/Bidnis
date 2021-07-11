@@ -53,20 +53,24 @@ if ( is_search() ) {
     if ( have_posts() ) {
       while ( have_posts() ) {
         the_post();
-
-        $bidnis_post_format = get_post_format();
-        $bidnis_post_type   = get_post_type();
-
-        if ( ( is_home() || is_front_page() || is_category() ) && $bidnis_post_format ) {
-          get_template_part( 'template-parts/content/content', $bidnis_post_format );
-        } elseif ( is_search() || ! get_theme_mod( 'display_content', false ) ) {
-          get_template_part( 'template-parts/content/content', 'excerpt' );
-        } else {
-          get_template_part( 'template-parts/content/content', $bidnis_post_type );
-        }
+        get_template_part( 'template-parts/content/content', get_post_format() );
       }
 
-      bidnis_the_posts_navigation();
+      if ( get_theme_mod( 'page_numbers', false ) ) {
+        the_posts_pagination(
+          array(
+            'prev_text' => __( 'Previous page', 'bidnis' ),
+            'next_text' => __( 'Next page', 'bidnis' ),
+          )
+        );
+      } else {
+        the_posts_navigation(
+          array(
+            'prev_text' => __( 'Older', 'bidnis' ),
+            'next_text' => __( 'Newer', 'bidnis' ),
+          )
+        );
+      };
     } else {
       get_template_part( 'template-parts/content/content', 'none' );
     }

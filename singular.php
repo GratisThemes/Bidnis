@@ -20,7 +20,7 @@
 
       <?php the_post(); ?>
 
-      <?php get_template_part( 'template-parts/content/content', get_post_type() ); ?>
+      <?php get_template_part( 'template-parts/singular/singular', get_post_type() ); ?>
 
       <?php
       if ( comments_open() || get_comments_number() ) {

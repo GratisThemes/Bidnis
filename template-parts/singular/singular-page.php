@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying post header, content and footer
+ * Template for displaying page content
  *
  * @package Bidnis
  * @since   Bidnis 2.0
@@ -18,6 +18,17 @@
 
   <section class="entry-content">
     <?php the_content(); ?>
-    <?php bidnis_wp_link_pages(); ?>
+
+    <?php
+    wp_link_pages(
+      array(
+        'before'      => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
+        'after'       => '</div>',
+        'link_before' => '<span class="page-number">',
+        'link_after'  => '</span>',
+      )
+    );
+    ?>
   </section><!-- .entry-content -->
+
 </article>

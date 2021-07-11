@@ -1,80 +1,75 @@
 /* 8.0 Post formats*/
-/* Post format: Video */
-.js {
-  .format-video {
-    iframe,
-    embed,
-    object {
-      width: 100%;
+
+/* Post formats: Aside*/
+body:not(.single) article.format-aside {
+  background-color: var(--color-gray);
+  padding: 1em;
+
+  > * + * {
+    margin-top: 0;
+  }
+
+  .entry-meta {
+    font-weight: var(--font-weight--bold);
+  }
+}
+
+/* Post formats: Chat*/
+body:not(.single) article.format-chat .entry-content {
+  font-family: monospace, monospace;
+}
+
+/* Post formats: Image */
+body:not(.single) article.format-image .entry-content {
+  img,
+  figure {
+    width: 100% !important;
+  }
+}
+
+/* Post formats: Link*/
+body:not(.single) article.format-link .entry-content {
+  font-size: 2rem;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-scheme);
     }
   }
 }
 
-/* Post format: Aside */
-.format-aside {
-  .entry-meta {
-    font-size: .8rem;
-  }
-}
-
-/* Post format: Status */
-.format-status {
-  .entry-meta {
-    font-size: .8rem;
-  }
-
-  .entry-content {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-}
-
-/* Post format: Link */
-.format-link {
-  .entry-content {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-}
-
-/* Post format: Quote */
-.format-quote {
-  .entry-content {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-
+/* Post formats: Quote*/
+body:not(.single) article.format-quote .entry-content {
+  font-size: 2rem;
+  text-align: center;
+  
   blockquote {
     border: none;
-    padding: 0 2em;
-    position: relative;
-    display: inline-block;
+  }
+}
+  
+/* Post formats: Status*/
+body:not(.single) article.format-status {
+  > * + * {
+    margin-top: 0;
+  }
 
-    &::before,
-    &::after {
-      position: absolute;
-      font-size: 3rem;
-    }
-
-    &::before {
-      content: '“';
-      top: 0;
-      left: 0;
-    }
-
-    &::after {
-      content: '”';
-      bottom: 0;
-      right: 0;
-    }
+  .entry-meta {
+    font-weight: var(--font-weight--bold);
   }
 }
 
-/* Post format: Chat */
-.format-chat {
-  .entry-content {
-    border: 0.0625em solid var(--color-scheme);
-    padding: 1em;
-    font-style: italic;
+/* Post formats: Video*/
+body:not(.single) article.format-video .entry-content {
+  iframe,
+  embed,
+  object {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    aspect-ratio: attr(width) / attr(height);
   }
 }
