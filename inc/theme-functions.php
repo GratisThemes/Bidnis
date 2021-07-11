@@ -40,3 +40,8 @@ require get_template_directory() . '/inc/theme-functions/the-posts-navigation.ph
  * The bidnis_the_title function
  */
 require get_template_directory() . '/inc/theme-functions/the-title.php';
+
+/**
+ * The bidnis_wp_link_pages function
+ */
+require get_template_directory() . '/inc/theme-functions/wp-link-pages.php';

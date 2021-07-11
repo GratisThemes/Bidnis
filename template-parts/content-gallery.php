@@ -25,15 +25,7 @@
       echo $bidnis_gallery; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     } else {
       the_content();
-
-      wp_link_pages(
-        array(
-          'before'      => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
-          'after'       => '</div>',
-          'link_before' => '<span class="page-number">',
-          'link_after'  => '</span>',
-        )
-      );
+      bidnis_wp_link_pages();
     }
     ?>
   </section><!-- .entry-content -->

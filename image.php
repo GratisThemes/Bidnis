@@ -38,16 +38,8 @@
 
           <?php the_content(); ?>
 
-          <?php
-          wp_link_pages(
-            array(
-              'before'      => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
-              'after'       => '</div>',
-              'link_before' => '<span class="page-number">',
-              'link_after'  => '</span>',
-            )
-          );
-          ?>
+          <?php bidnis_wp_link_pages(); ?>
+          
         </section><!-- .entry-content -->
 
     </article>

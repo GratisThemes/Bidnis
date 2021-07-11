@@ -21,22 +21,13 @@
   ?>
 
   <section class="entry-content">
-
     <?php the_content(); ?>
 
     <?php
     if ( is_single() ) {
-      wp_link_pages(
-        array(
-          'before'      => '<div class="page-links">' . __( 'Pages:', 'bidnis' ),
-          'after'       => '</div>',
-          'link_before' => '<span class="page-number">',
-          'link_after'  => '</span>',
-        )
-      );
+      bidnis_wp_link_pages();
     }
     ?>
-
   </section><!-- .entry-content -->
 
   <?php
