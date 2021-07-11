@@ -22,15 +22,10 @@
   <?php endif; ?>
 
   <?php
-  if ( '' !== get_the_post_thumbnail() && (
-    ( is_singular() && get_theme_mod( 'thumbnail_content', true ) ) ||
-    ( ! is_singular() && get_theme_mod( 'thumbnail_index', true ) )
-  ) ) :
-    ?>
-    <a class="post-thumbnail" href="<?php the_permalink(); ?>">
-      <?php the_post_thumbnail( 'bidnis-featured-image' ); ?>
-    </a><!-- .post-thumbnail -->
-  <?php endif; ?>
+  if ( is_single() ) {
+    bidnis_the_post_thumbnail();
+  }
+  ?>
 
   <section class="entry-content">
     <?php

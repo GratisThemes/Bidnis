@@ -14,6 +14,12 @@
     <?php bidnis_edit_post_link(); ?>
   </header>
 
+  <?php
+  if ( is_single() ) {
+    bidnis_the_post_thumbnail();
+  }
+  ?>
+
   <section class="entry-content">
 
     <?php the_content(); ?>
