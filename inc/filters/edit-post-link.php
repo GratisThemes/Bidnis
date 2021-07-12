@@ -29,7 +29,7 @@ function bidnis_edit_post_link( $link, $post_id, $text ) {
     __( 'Edit', 'bidnis' ),
     sprintf(
       /* translators: %s: Post title. Only visible to screen readers. */
-      __( 'Edit "%s"' ),
+      __( 'Edit "%s"', 'bidnis' ),
       get_the_title()
     )
   );
