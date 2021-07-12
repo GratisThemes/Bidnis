@@ -34,10 +34,7 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  padding-right: .25em;
-}
-
-.sticky .entry-header h3::before {
   content: '\f08d';
   font-weight: 900;
+  padding-right: .25em;
 }
