@@ -6,22 +6,22 @@
  * @since   Bidnis 1.0
  */
 
-$archive_title       = '';
-$archive_description = '';
+$bidnis_archive_title       = '';
+$bidnis_archive_description = '';
 
 if ( is_search() ) {
-  $archive_title = sprintf(
+  $bidnis_archive_title = sprintf(
     /* translators: %s: search term */
     __( 'Search results for: "%s"', 'bidnis' ),
     '<span>' . get_search_query() . '</span>'
   );
 
 } elseif ( is_archive() && ! have_posts() ) {
-  $archive_title = __( 'Nothing Found', 'bidnis' );
+  $bidnis_archive_title = __( 'Nothing Found', 'bidnis' );
 
 } elseif ( ! is_home() ) {
-  $archive_title       = get_the_archive_title();
-  $archive_description = get_the_archive_description();
+  $bidnis_archive_title       = get_the_archive_title();
+  $bidnis_archive_description = get_the_archive_description();
 }
 ?>
 
@@ -37,14 +37,14 @@ if ( is_search() ) {
 
   <section class="content-container">
 
-    <?php if ( $archive_title || $archive_description ) : ?>
+    <?php if ( $bidnis_archive_title || $bidnis_archive_description ) : ?>
       <header class="page-header">
-        <?php if ( $archive_title ) : ?>
-          <h1><?php echo wp_kses_post( $archive_title ); ?></h1>
+        <?php if ( $bidnis_archive_title ) : ?>
+          <h1><?php echo wp_kses_post( $bidnis_archive_title ); ?></h1>
         <?php endif; ?>
 
-        <?php if ( $archive_description ) : ?>
-          <?php echo wp_kses_post( wpautop( $archive_description ) ); ?>
+        <?php if ( $bidnis_archive_description ) : ?>
+          <?php echo wp_kses_post( wpautop( $bidnis_archive_description ) ); ?>
         <?php endif; ?>
       </header>
     <?php endif; ?>
