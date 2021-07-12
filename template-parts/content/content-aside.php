@@ -11,7 +11,7 @@
 
   <header class="entry-header">
     <?php bidnis_entry_meta(); ?>
-    <?php bidnis_edit_post_link(); ?>
+    <?php edit_post_link(); ?>
   </header>
 
   <section class="entry-content">

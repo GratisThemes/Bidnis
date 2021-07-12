@@ -11,7 +11,7 @@
 
   <?php if ( current_user_can( 'edit_pages' ) ) : ?>
     <header class="entry-header">
-      <?php bidnis_edit_post_link(); ?>
+      <?php edit_post_link(); ?>
     </header>
   <?php endif; ?>
 

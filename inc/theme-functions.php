@@ -7,11 +7,6 @@
  */
 
 /**
- * The bidnis_edit_post_link function
- */
-require get_template_directory() . '/inc/theme-functions/edit-post-link.php';
-
-/**
  * The bidnis_entry_meta function
  */
 require get_template_directory() . '/inc/theme-functions/entry-meta.php';

@@ -12,6 +12,11 @@
 require get_template_directory() . '/inc/filters/body-class.php';
 
 /**
+ * Filter for edit_post_link()
+ */
+require get_template_directory() . '/inc/filters/edit-post-link.php';
+
+/**
  * Filter for the get_the_archive_title function
  */
 require get_template_directory() . '/inc/filters/get-the-archive-title.php';

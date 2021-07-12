@@ -12,7 +12,7 @@
   <header class="entry-header">
     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <?php bidnis_entry_meta(); ?>
-    <?php bidnis_edit_post_link(); ?>
+    <?php edit_post_link(); ?>
   </header>
 
   <?php bidnis_the_post_thumbnail(); ?>
