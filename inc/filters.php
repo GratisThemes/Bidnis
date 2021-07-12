@@ -17,6 +17,11 @@ require get_template_directory() . '/inc/filters/body-class.php';
 require get_template_directory() . '/inc/filters/get-the-archive-title.php';
 
 /**
- * Filter for the the end of excerpts
+ * Filter for the end of excerpts
  */
 require get_template_directory() . '/inc/filters/excerpt-more.php';
+
+/**
+ * Filter for the post title
+ */
+require get_template_directory() . '/inc/filters/post-title.php';
