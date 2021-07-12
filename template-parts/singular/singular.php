@@ -15,7 +15,7 @@
     <?php edit_post_link(); ?>
   </header>
 
-  <?php bidnis_the_post_thumbnail(); ?>
+  <?php the_post_thumbnail(); ?>
 
   <section class="entry-content">
     <?php the_content(); ?>

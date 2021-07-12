@@ -27,6 +27,11 @@ require get_template_directory() . '/inc/filters/get-the-archive-title.php';
 require get_template_directory() . '/inc/filters/excerpt-more.php';
 
 /**
+ * Filter for the post thumbnail html
+ */
+require get_template_directory() . '/inc/filters/post-thumbnail-html.php';
+
+/**
  * Filter for the post title
  */
 require get_template_directory() . '/inc/filters/post-title.php';
