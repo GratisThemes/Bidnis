@@ -2,6 +2,7 @@
 
 /* Post formats: Aside*/
 body:not(.single) article.format-aside {
+  background-color: $color-gray;
   background-color: var(--color-gray);
   padding: 1em;
 
@@ -10,6 +11,7 @@ body:not(.single) article.format-aside {
   }
 
   .entry-meta {
+    font-weight: $font-weight--bold;
     font-weight: var(--font-weight--bold);
   }
 }
@@ -36,6 +38,7 @@ body:not(.single) article.format-link .entry-content {
     text-decoration: none;
 
     &:hover {
+      color: $color-scheme;
       color: var(--color-scheme);
     }
   }
@@ -58,6 +61,7 @@ body:not(.single) article.format-status {
   }
 
   .entry-meta {
+    font-weight: $font-weight--bold;
     font-weight: var(--font-weight--bold);
   }
 }

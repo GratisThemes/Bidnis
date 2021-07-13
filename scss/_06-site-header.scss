@@ -1,6 +1,8 @@
 /* 6.0 Site header*/
 .site-header {
+  background-color: $color-scheme;
   background-color: var(--color-scheme);
+  color: $header-text-color;
   color: var(--header-text-color);
   text-align: center;
 
@@ -10,6 +12,7 @@
 
   a {
     text-decoration: none;
+    color: $header-text-color;
     color: var(--header-text-color);
   }
 }
@@ -18,6 +21,7 @@
   &__title,
   &__tagline {
     margin: 0;
+    font-weight: $font-weight--xxbold;
     font-weight: var(--font-weight--xxbold);
     text-transform: uppercase;
   }
@@ -33,6 +37,7 @@
 
 .bidnis-phone,
 .bidnis-email {
+  font-weight: $font-weight--bold;
   font-weight: var(--font-weight--bold);
 }
 
@@ -43,9 +48,12 @@
   gap: 0.5em;
 
   a {
+    background-color: $color-black;
     background-color: var(--color-black);
+    color: $color-white;
     color: var(--color-white);
     padding: 0.15em;
+    border-radius: $border-radius;
     border-radius: var(--border-radius);
     width: 1.5em;
     height: 1.5em;

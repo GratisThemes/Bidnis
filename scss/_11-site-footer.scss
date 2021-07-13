@@ -1,6 +1,8 @@
 /* 11.0 Site footer*/
 .site-footer {
+  background-color: $color-black;
   background-color: var(--color-black);
+  color: $color-white;
   color: var(--color-white);
   font-size: 0.85rem;
   padding-top: 2em;
@@ -11,6 +13,7 @@
   }
   
   a {
+    color: $color-white;
     color: var(--color-white);
     text-decoration: none;
     
@@ -31,6 +34,7 @@
 
   > * + * {
     padding-left: 0.5em;
+    border-left: $border-width $border-style $color-scheme;
     border-left: var(--border-width) var(--border-style) var(--color-scheme);
   }
 }
@@ -55,6 +59,7 @@
     > * + * {
       margin-top: 0;
       padding-left: 1em;
+      border-left: $border-width $border-style $color-scheme;
       border-left: var(--border-width) var(--border-style) var(--color-scheme);
     }
   }

@@ -11,7 +11,8 @@
   }
 
   > *:not(:last-child) {
-    border-right: 0.0625em solid var(--color-border);
+    border-right: 0.0625em solid $color-scheme;
+    border-right: 0.0625em solid var(--color-scheme);
     padding-right: 0.5em;
     margin-right: 0.5em;
   }
