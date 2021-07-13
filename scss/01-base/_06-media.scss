@@ -1,53 +1,43 @@
 /* 1.6 Base: Media */
-.wp-caption,
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.wp-caption,
-.gallery-item {
-  border: 0.0625em solid var(--color-scheme);
-  overflow: hidden;
-
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.gallery-caption,
-.wp-caption-text {
-  font-size: .8rem;
-  padding: 1em;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  vertical-align: bottom;
-}
-
+img,
 iframe,
 embed,
 object {
   max-width: 100%;
 }
 
+img {
+  vertical-align: bottom;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.wp-caption-text {
+  padding: 0.5em;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, auto));
-  max-width: 1280px; /* content width */
-  grid-gap: 1em;
+  max-width: 100%;
+  gap: 2em;
 }
 
-.gallery-columns-1 {
-  grid-template-columns: minmax(0, 1fr);
+.gallery-item {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 768px) {
+.gallery-caption {
+  text-align: center;
+}
+
+@media (min-width: 48em) {
   .gallery {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
