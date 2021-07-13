@@ -8,6 +8,7 @@
     "dev": "npx gulp dev",
     "build": "npx gulp build",
     "css": "npx gulp css",
+    "rtl": "npx gulp rtl",
     "pot": "npx gulp pot",
     "phpcs": "phpcs --standard=./phpcs.xml --ignore=*/node_modules/*,*/assets/* --tab-width=2 -s .; exit 0;"
   },
@@ -28,6 +29,8 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.2",
     "gulp-sass": "^5.0.0",
     "gulp-sort": "^2.0.0",
     "gulp-wp-pot": "^2.5.0",

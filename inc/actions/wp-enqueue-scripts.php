@@ -37,6 +37,9 @@ function bidnis_wp_enqueue_scripts() {
     $theme_version
   );
 
+  // Replace the stylesheet with a RTL one if needed.
+  wp_style_add_data( 'bidnis-style', 'rtl', 'replace' );
+
   // Theme JavaScript.
   wp_enqueue_script(
     'bidnis-script',

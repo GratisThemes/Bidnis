@@ -5,6 +5,8 @@ const prefix  = require( 'gulp-autoprefixer' )
 const wpPot   = require( 'gulp-wp-pot' )
 const sort    = require( 'gulp-sort' )
 const zip     = require( 'gulp-zip' )
+const rtlcss  = require( 'gulp-rtlcss' )
+const rename  = require( 'gulp-rename' )
 
 const pkg = require('./package.json')
 
@@ -23,6 +25,14 @@ function css() {
     .pipe(plumber())
     .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }).on('error', sass.logError))
     .pipe(prefix(['last 30 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(gulp.dest('./'))
+}
+
+// RTL CSS
+function rtl() {
+  return gulp.src('./style.css')
+    .pipe(rtlcss())
+    .pipe(rename({ suffix: '-rtl' }))
     .pipe(gulp.dest('./'))
 }
 
@@ -67,6 +77,7 @@ function watch() {
 }
 
 module.exports.css   = css
+module.exports.rtl   = rtl
 module.exports.pot   = pot
-module.exports.dev   = gulp.series(css, pot, watch)
-module.exports.build = gulp.series(css, pot, package)
+module.exports.dev   = gulp.series(css, rtl, pot, watch)
+module.exports.build = gulp.series(css, rtl, pot, package)
