@@ -14,11 +14,11 @@
 
   <section class="content-container">
 
-    <article class="error-404 not-found">
+    <header class="page-header">
+      <h1><?php esc_html_e( '404 Not Found', 'bidnis' ); ?></h1>
+    </header>
 
-      <header class="page-header">
-        <h1><?php esc_html_e( '404 Not Found', 'bidnis' ); ?></h1>
-      </header>
+    <article class="error-404 not-found">
 
       <section class="entry-content">
         <p>
