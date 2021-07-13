@@ -137,7 +137,7 @@ function bidnis_customize_register( $wp_customize ) {
     'entry_meta',
     array(
       'title'    => __( 'Entry Metadata', 'bidnis' ),
-      'priority' => 80,
+      'priority' => 90,
     )
   );
 
@@ -190,24 +190,6 @@ function bidnis_customize_register( $wp_customize ) {
     'entry_meta_comments',
     array(
       'label'   => __( 'Display comment count', 'bidnis' ),
-      'section' => 'entry_meta',
-      'type'    => 'checkbox',
-    )
-  );
-
-  // Entry meta post format.
-  $wp_customize->add_setting(
-    'entry_meta_post_format',
-    array(
-      'default'           => true,
-      'sanitize_callback' => 'bidnis_sanitize_checkbox',
-    )
-  );
-
-  $wp_customize->add_control(
-    'entry_meta_post_format',
-    array(
-      'label'   => __( 'Display Post Format', 'bidnis' ),
       'section' => 'entry_meta',
       'type'    => 'checkbox',
     )
@@ -267,12 +249,12 @@ function bidnis_customize_register( $wp_customize ) {
     )
   );
 
-  // Theme options.
+  // Content options.
   $wp_customize->add_section(
-    'design_options',
+    'content_options',
     array(
-      'title'    => __( 'Theme options', 'bidnis' ),
-      'priority' => 90,
+      'title'    => __( 'Content', 'bidnis' ),
+      'priority' => 80,
     )
   );
 
@@ -288,8 +270,8 @@ function bidnis_customize_register( $wp_customize ) {
   $wp_customize->add_control(
     'display_content',
     array(
-      'label'   => __( 'Display full content of posts on index pages', 'bidnis' ),
-      'section' => 'design_options',
+      'label'   => __( 'Display full content of posts on archive pages', 'bidnis' ),
+      'section' => 'content_options',
       'type'    => 'checkbox',
     )
   );
@@ -306,8 +288,8 @@ function bidnis_customize_register( $wp_customize ) {
   $wp_customize->add_control(
     'thumbnail_index',
     array(
-      'label'   => __( 'Display thumbnails on index pages', 'bidnis' ),
-      'section' => 'design_options',
+      'label'   => __( 'Display post thumbnails on archive pages', 'bidnis' ),
+      'section' => 'content_options',
       'type'    => 'checkbox',
     )
   );
@@ -324,8 +306,8 @@ function bidnis_customize_register( $wp_customize ) {
   $wp_customize->add_control(
     'thumbnail_content',
     array(
-      'label'   => __( 'Display thumbnails on content pages', 'bidnis' ),
-      'section' => 'design_options',
+      'label'   => __( 'Display post thumbnails on singular pages', 'bidnis' ),
+      'section' => 'content_options',
       'type'    => 'checkbox',
     )
   );
@@ -343,8 +325,17 @@ function bidnis_customize_register( $wp_customize ) {
     'read_more',
     array(
       'label'   => __( 'Display read more button', 'bidnis' ),
-      'section' => 'design_options',
+      'section' => 'content_options',
       'type'    => 'checkbox',
+    )
+  );
+
+  // Navigation options.
+  $wp_customize->add_section(
+    'nav_options',
+    array(
+      'title'    => __( 'Navigation', 'bidnis' ),
+      'priority' => 90,
     )
   );
 
@@ -360,8 +351,8 @@ function bidnis_customize_register( $wp_customize ) {
   $wp_customize->add_control(
     'page_numbers',
     array(
-      'label'   => __( 'Display page numbers on index pages', 'bidnis' ),
-      'section' => 'design_options',
+      'label'   => __( 'Display page numbers on archive pages', 'bidnis' ),
+      'section' => 'nav_options',
       'type'    => 'checkbox',
     )
   );
@@ -598,7 +589,7 @@ function bidnis_customize_register( $wp_customize ) {
   $wp_customize->add_control(
     'scrolltotop',
     array(
-      'label'   => __( 'Scroll to top icon in footer', 'bidnis' ),
+      'label'   => __( 'Display scroll-to-top button', 'bidnis' ),
       'section' => 'footer',
       'type'    => 'checkbox',
     )
