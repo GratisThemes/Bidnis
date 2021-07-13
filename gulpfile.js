@@ -72,7 +72,7 @@ function package() {
 
 // Watch
 function watch() {
-  gulp.watch('scss/**/*.scss', {cwd: './', usePolling: true}, css)
+  gulp.watch('scss/**/*.scss', {cwd: './', usePolling: true}, gulp.series( css, rtl ) )
   gulp.watch('**/*.php',       {cwd: './', usePolling: true}, pot)
 }
 
