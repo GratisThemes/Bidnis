@@ -36,10 +36,10 @@
 
   <nav class="image-nav">
     <div class="image-nav__previous">
-      <?php previous_image_link( false, __( 'Previous Image', 'bidnis' ) ); ?>
+      <?php previous_image_link( false, '<i class="fa fa-long-arrow-alt-left"></i>' . __( 'Previous Image', 'bidnis' ) ); ?>
     </div>
     <div class="image-nav__next">
-      <?php next_image_link( false, __( 'Next Image', 'bidnis' ) ); ?>
+      <?php next_image_link( false, __( 'Next Image', 'bidnis' ) . '<i class="fa fa-long-arrow-alt-right"></i>' ); ?>
     </div>
   </nav><!-- .image-navigation -->
 

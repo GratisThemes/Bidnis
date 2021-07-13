@@ -59,15 +59,15 @@ if ( is_search() ) {
       if ( get_theme_mod( 'page_numbers', false ) ) {
         the_posts_pagination(
           array(
-            'prev_text' => __( 'Previous page', 'bidnis' ),
-            'next_text' => __( 'Next page', 'bidnis' ),
+            'prev_text' => '<i class="fa fa-long-arrow-alt-left"></i>' . __( 'Previous page', 'bidnis' ),
+            'next_text' => __( 'Next page', 'bidnis' ) . '<i class="fa fa-long-arrow-alt-right"></i>',
           )
         );
       } else {
         the_posts_navigation(
           array(
-            'prev_text' => __( 'Older', 'bidnis' ),
-            'next_text' => __( 'Newer', 'bidnis' ),
+            'prev_text' => '<i class="fa fa-long-arrow-alt-left"></i>' . __( 'Older', 'bidnis' ),
+            'next_text' => __( 'Newer', 'bidnis' ) . '<i class="fa fa-long-arrow-alt-right"></i>',
           )
         );
       };

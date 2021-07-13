@@ -41,8 +41,8 @@
   <?php
   the_post_navigation(
     array(
-      'prev_text' => '<span class="screen-reader-text">' . __( 'Previous post', 'bidnis' ) . '</span><span>%title</span>',
-      'next_text' => '<span class="screen-reader-text">' . __( 'Next post', 'bidnis' ) . '</span><span>%title</span>',
+      'prev_text' => '<span class="screen-reader-text">' . __( 'Previous post', 'bidnis' ) . '</span><i class="fa fa-long-arrow-alt-left"></i>%title',
+      'next_text' => '<span class="screen-reader-text">' . __( 'Next post', 'bidnis' ) . '</span>%title<i class="fa fa-long-arrow-alt-right"></i>',
     )
   );
   ?>
