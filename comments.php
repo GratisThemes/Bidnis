@@ -17,7 +17,6 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
   <h3 class="comments-title">
-
     <?php
     $bidnis_comments_number = get_comments_number();
 
@@ -28,7 +27,6 @@ if ( post_password_required() ) {
       esc_html( get_the_title() )
     );
     ?>
-
   </h3><!-- #comments-title -->
 
   <ol class="comment-list">
@@ -46,8 +44,8 @@ if ( post_password_required() ) {
   <?php
   the_comments_navigation(
     array(
-      'prev_text' => __( 'Older comments', 'bidnis' ) . '<span class="screen-reader-text">' . __( 'Older comments', 'bidnis' ) . '</span>',
-      'next_text' => __( 'Newer comments', 'bidnis' ) . '<span class="screen-reader-text">' . __( 'Newer comments', 'bidnis' ) . '</span>',
+      'prev_text' => '<i class="fa fa-long-arrow-alt-left"></i>' . __( 'Older comments', 'bidnis' ),
+      'next_text' => __( 'Newer comments', 'bidnis' ) . '<i class="fa fa-long-arrow-alt-right"></i>',
     )
   );
   ?>
@@ -55,8 +53,9 @@ if ( post_password_required() ) {
   <?php
   comment_form(
     array(
-      'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
-      'title_reply_after'  => '</h2>',
+      'class_form'         => 'comment-form',
+      'title_reply_before' => '<h3 id="reply-title" class="comment-reply-title">',
+      'title_reply_after'  => '</h3>',
     )
   );
   ?>
