@@ -18,9 +18,9 @@ if (
 ?>
 
 <?php if ( is_active_sidebar( 'footer-top-widget-area' ) ) : ?>
-  <div id="footer-top-widget-area" class="widget-area" role="complementary">
+  <div class="widget-area widget-area-top-footer" role="complementary">
     <?php dynamic_sidebar( 'footer-top-widget-area' ); ?>
-  </div><!-- #footer-top-widget-area -->
+  </div><!-- .widget-area-top-footer -->
 <?php endif; ?>
 
 <?php
@@ -34,30 +34,30 @@ if (
 }
 ?>
 
-<div id="footer-widget-areas" role="complementary">
+<div class="widget-areas widget-areas-footer" role="complementary">
 
   <?php if ( is_active_sidebar( 'footer-one-widget-area' ) ) : ?>
-    <div id="footer-one-widget-area" class="widget-area" role="complementary">
+    <div class="widget-area widget-area-footer-one" role="complementary">
       <?php dynamic_sidebar( 'footer-one-widget-area' ); ?>
-    </div><!-- .footer-one-widget-area .widget-area -->
+    </div><!-- .widget-area-footer-one -->
   <?php endif; ?>
 
   <?php if ( is_active_sidebar( 'footer-two-widget-area' ) ) : ?>
-    <div id="footer-two-widget-area" class="widget-area" role="complementary">
+    <div class="widget-area widget-area-footer-two" role="complementary">
       <?php dynamic_sidebar( 'footer-two-widget-area' ); ?>
-    </div><!-- .footer-two-widget-area .widget-area -->
+    </div><!-- .widget-area-footer-two -->
   <?php endif; ?>
 
   <?php if ( is_active_sidebar( 'footer-three-widget-area' ) ) : ?>
-    <div id="footer-three-widget-area" class="widget-area" role="complementary">
+    <div class="widget-area widget-area-footer-three" role="complementary">
       <?php dynamic_sidebar( 'footer-three-widget-area' ); ?>
-    </div><!-- .footer-three-widget-area .widget-area -->
+    </div><!-- .widget-area-footer-three -->
   <?php endif; ?>
 
   <?php if ( is_active_sidebar( 'footer-four-widget-area' ) ) : ?>
-    <div id="footer-four-widget-area" class="widget-area" role="complementary">
+    <div class="widget-area widget-area-footer-four" role="complementary">
       <?php dynamic_sidebar( 'footer-four-widget-area' ); ?>
-    </div><!-- .footer-four-widget-area .widget-area -->
+    </div><!-- .widget-area-footer-four -->
   <?php endif; ?>
 
 </div><!-- #footer-widget-areas -->

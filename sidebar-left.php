@@ -10,7 +10,7 @@
 
 <?php if ( is_active_sidebar( 'sidebar-left-widget-area' ) ) : ?>
 
-  <aside id="widget-area-left-sidebar" class="widget-area">
+  <aside class="widget-area widget-area-left-sidebar" role="complementary">
     <?php dynamic_sidebar( 'sidebar-left-widget-area' ); ?>
   </aside>
 

@@ -11,8 +11,8 @@
 @media (min-width: 48em) {
   .site-main {
     display: grid;
-    grid-template-columns: 18em 1fr 18em;
-    grid-gap: 4em;
+    grid-template-columns: 18em minmax(0, 1fr) 18em;
+    gap: 4em;
     grid-template-areas: "content content content";
     align-content: start;
     align-items: start;
@@ -39,7 +39,6 @@
 
 @media (min-width: 64em) {
   body.has-right-sidebar.has-left-sidebar .site-main {
-    grid-gap: 4em 2em;
     grid-template-areas: "left-sidebar content right-sidebar";
   }
 }

@@ -25,7 +25,7 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Left Sidebar', 'bidnis' ),
+      'name'          => __( 'Left sidebar', 'bidnis' ),
       'id'            => 'sidebar-left-widget-area',
       'description'   => __( 'Widget area at the left side of the content', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -37,7 +37,7 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Right Sidebar', 'bidnis' ),
+      'name'          => __( 'Right sidebar', 'bidnis' ),
       'id'            => 'sidebar-right-widget-area',
       'description'   => __( 'Widget area at the right side of the content', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -49,9 +49,9 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer Top', 'bidnis' ),
+      'name'          => __( 'Footer top', 'bidnis' ),
       'id'            => 'footer-top-widget-area',
-      'description'   => __( 'Widget area in the footer', 'bidnis' ),
+      'description'   => __( 'Widget area on the top of the footer', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
@@ -61,9 +61,9 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer One', 'bidnis' ),
+      'name'          => __( 'Footer column one', 'bidnis' ),
       'id'            => 'footer-one-widget-area',
-      'description'   => __( 'Widget area in the footer', 'bidnis' ),
+      'description'   => __( 'Widget area in the footer, column to the far left', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
@@ -73,9 +73,9 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer Two', 'bidnis' ),
+      'name'          => __( 'Footer column two', 'bidnis' ),
       'id'            => 'footer-two-widget-area',
-      'description'   => __( 'Widget area in the footer', 'bidnis' ),
+      'description'   => __( 'Widget area in the footer, column to the middle left', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
@@ -85,9 +85,9 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer Three', 'bidnis' ),
+      'name'          => __( 'Footer column three', 'bidnis' ),
       'id'            => 'footer-three-widget-area',
-      'description'   => __( 'Widget area in the footer', 'bidnis' ),
+      'description'   => __( 'Widget area in the footer, column to the middle right', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',
@@ -97,9 +97,9 @@ function bidnis_widgets_init() {
 
   register_sidebar(
     array(
-      'name'          => __( 'Footer Four', 'bidnis' ),
+      'name'          => __( 'Footer column four', 'bidnis' ),
       'id'            => 'footer-four-widget-area',
-      'description'   => __( 'Widget area in the footer', 'bidnis' ),
+      'description'   => __( 'Widget area in the footer, column to the far right', 'bidnis' ),
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widget-title">',

@@ -8,10 +8,10 @@
 
 if ( is_active_sidebar( 'above-content-widget-area' ) ) : ?>
 
-  <div id="above-content-widget-area" class="widget-area wrapper" role="complementary">
+  <div class="widget-area widget-area-above-content" role="complementary">
 
     <?php dynamic_sidebar( 'above-content-widget-area' ); ?>
 
-  </div><!-- #above-content-widget-area -->
+  </div><!-- .widget-area-above-content -->
 
 <?php endif; ?>

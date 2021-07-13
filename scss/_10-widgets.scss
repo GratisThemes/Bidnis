@@ -1,11 +1,14 @@
 /* 10.0 Widgets*/
-#footer-top-widget-area,
-#footer-widget-areas {
-  background-color: #000000;
-  color: #FFFFFF;
+.widget-area-top-footer,
+.widget-areas-footer {
+  background-color: $color-black;
+  background-color: var(--color-black);
+  color: $color-white;
+  color: var(--color-white);
 
-  a { 
-    color: #FFFFFF;
+  a {
+    color: $color-white;
+    color: var(--color-white);
     text-decoration: none;
 
     &:hover {
@@ -15,7 +18,8 @@
 }
 
 .widget-title {
-  margin: 0 0 .25em;
+  margin: 0 0 .5em;
+  padding: 0 0 0.125em;
   border-bottom: 0.0625em solid $color-scheme;
   border-bottom: 0.0625em solid var(--color-scheme);
 }
