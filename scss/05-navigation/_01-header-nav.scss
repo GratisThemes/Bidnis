@@ -187,7 +187,7 @@
     }
 
     ul li.menu-item-has-children > a::after {
-       content: '▶';
+       content: '▶' #{"/*!rtl:'⯇';*/"};
     }
   }
 }
