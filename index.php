@@ -38,7 +38,7 @@ if ( is_search() ) {
   <section class="content-container">
 
     <?php if ( $bidnis_archive_title || $bidnis_archive_description ) : ?>
-      <header class="page-header">
+      <header class="archive-header">
         <?php if ( $bidnis_archive_title ) : ?>
           <h1><?php echo wp_kses_post( $bidnis_archive_title ); ?></h1>
         <?php endif; ?>
