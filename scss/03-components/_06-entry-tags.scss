@@ -11,6 +11,8 @@
     padding: 0.25em 0.5em;
     transition: all .3s ease-in-out;
     text-decoration: none;
+    color: $text-color;
+    color: var(--text-color);
 
     &:hover,
     &:focus {

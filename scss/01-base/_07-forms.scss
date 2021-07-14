@@ -2,8 +2,12 @@
 input,
 textarea,
 select {
+  background-color: $color-white;
   background-color: var(--color-white);
+  color: $color-black;
+  color: var(--color-black);
   max-width: 100%;
+  border: $border-width $border-style $color-scheme;
   border: var(--border-width) var(--border-style) var(--color-scheme);
   border-radius: 0;
   padding: 0.5em;
@@ -41,14 +45,19 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
+  background-color: $background-color;
+  background-color: var(--background-color);
+  color: $text-color;
+  color: var(--text-color);
+  border: $border-width $border-style $color-scheme;
   border: var(--border-width) var(--border-style) var(--color-scheme);
-  background-color: var(--color-white);
   padding: 0.5em 0.75em;
   cursor: pointer;
   text-decoration: none;
   transition: all .3s ease-in-out;
 
   &:hover {
+    background-color: $color-scheme;
     background-color: var(--color-scheme);
   }
 }

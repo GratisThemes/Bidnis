@@ -4,13 +4,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1em;
+
+  a {
+    color: $text-color;
+    color: var(--text-color);
+  }
 }
 
 .nav-previous,
 .nav-next,
 .page-numbers:not(.dots) {
-  background-color: $color-white;
-  background-color: var(--color-white);
+  background-color: $background-color;
+  background-color: var(--background-color);
   border: $border-width $border-style $color-scheme;
   border: var(--border-width) var(--border-style) var(--color-scheme);
   text-decoration: none;

@@ -11,6 +11,8 @@ body {
   font-style: var(--font-style);
   font-weight: $font-weight--normal;
   font-weight: var(--font-weight--normal);
+  color: $text-color;
+  color: var(--text-color);
   text-align: left;
   word-wrap: break-word;
   word-break: break-word;

@@ -12,6 +12,8 @@
 
   &__title a {
     text-decoration: none;
+    color: $text-color;
+    color: var(--text-color);
   }
 
   > * + * {
