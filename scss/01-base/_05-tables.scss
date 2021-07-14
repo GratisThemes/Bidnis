@@ -10,8 +10,8 @@ table {
   display: inline-block;
   border-collapse: separate;
   border-spacing: 0;
-  border-width: $border-width;
-  border-width: var(--border-width);
+  border-width: $border-width 0 0 $border-width;
+  border-width: var(--border-width) 0 0 var(--border-width);
   overflow-x: auto;
   max-width: 100%;
   white-space: nowrap;
@@ -26,5 +26,7 @@ thead {
 
  td,
  th {
+  border-width: 0 $border-width $border-width 0;
+  border-width: 0 var(--border-width) var(--border-width) 0;
   padding: 1em;
 }
