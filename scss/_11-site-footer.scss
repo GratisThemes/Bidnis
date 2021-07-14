@@ -23,22 +23,6 @@
   }
 }
 
-.site-footer-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5em;
-
-  > * + * {
-    padding-left: 0.5em;
-    border-left: $border-width $border-style $color-scheme;
-    border-left: var(--border-width) var(--border-style) var(--color-scheme);
-  }
-}
-
 .site-footer-info {
   text-align: center;
   font-size: 0.75rem;
