@@ -59,26 +59,41 @@
     text-decoration: underline;
   }
 
+  caption {
+    margin-bottom: 0.5em;
+  }
+
   table {
     display: table !important;
     table-layout: fixed;
+
+    a {
+      text-decoration: none;
+      font-weight: $font-weight--bold;
+      font-weight: var(--font-weight--bold);
+    }
   }
 
   td,
   th {
     text-align: center;
+    padding: 0.5em;
   }
 
-  #prev,
-  #prev+.pad {
-    border-right: 0;
-  }
+  .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
 
-  #prev {
-    text-align: left;
+    a {
+      text-decoration: none;
+    }
   }
+}
 
-  #next {
-    text-align: right;
+.widget-area-top-footer {
+  .widget_calendar table  a {
+    color: $color-scheme;
+    color: var(--color-scheme);
   }
 }
