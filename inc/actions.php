@@ -20,3 +20,8 @@ require get_template_directory() . '/inc/actions/widget-areas.php';
  * WP Customizer settings
  */
 require get_template_directory() . '/inc/actions/customizer.php';
+
+/**
+ * WP Head
+ */
+require get_template_directory() . '/inc/actions/wp-head.php';
