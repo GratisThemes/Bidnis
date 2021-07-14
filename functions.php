@@ -100,7 +100,7 @@ if ( ! function_exists( 'bidnis_setup' ) ) {
     // Editor styles for TinyMCE and Gutenberg .
     // https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#editor-styles .
     add_theme_support( 'editor-styles' );
-    add_editor_style( 'editor-style.css' );
+    add_editor_style( 'style-editor.css' );
 
     // https://codex.wordpress.org/Function_Reference/register_default_headers .
     register_default_headers(
