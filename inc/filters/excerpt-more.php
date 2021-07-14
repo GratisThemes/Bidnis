@@ -23,7 +23,7 @@ function bidnis_excerpt_more( $more_string ) {
   }
 
   return sprintf(
-    '...<a class="read-more-link button" href="%1$s">%2$s<span class="screen-reader-text">%2$s</span></a>',
+    '...<a class="read-more-link button" href="%1$s">%2$s</a>',
     esc_url( get_permalink( get_the_ID() ) ),
     esc_html__( 'Read more', 'bidnis' )
   );

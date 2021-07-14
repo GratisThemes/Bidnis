@@ -33,7 +33,10 @@
   </section><!-- .entry-content -->
 
   <?php if ( has_tag() && get_theme_mod( 'entry_meta_tags', true ) ) : ?>
-    <?php the_tags( '<div class="entry-tags"><i class="fa fa-tags"></i>', ', ', '</div><!-- .entry-tags -->' ); ?>
+    <?php
+    // TODO: find a way to add aria-label or screen-reader-text for this.
+    the_tags( '<div class="entry-tags"><i class="fa fa-tags"></i>', ', ', '</div><!-- .entry-tags -->' );
+    ?>
   <?php endif; ?>
 
   <?php get_template_part( 'template-parts/author-bio' ); ?>

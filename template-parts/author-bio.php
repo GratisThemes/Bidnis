@@ -16,12 +16,16 @@ if ( ! (bool) get_the_author_meta( 'description' ) || ! post_type_supports( get_
   <?php echo get_avatar( get_the_author_meta( 'ID' ), '128' ); ?>
 
   <?php
+  $bidnis_post_author = get_the_author();
+
   printf(
     '<h6 class="author-bio__title">%s</h6>',
     sprintf(
-      '<a href="%1$s">%2$s</a>',
+      '<a href="%1$s" aria-label="%3$s">%2$s</a>',
       esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-      get_the_author()
+      $bidnis_post_author, // phpcs:ignore WordPress.Security.EscapeOutput
+      /* translators: %s Post author */
+      sprintf( esc_attr__( 'Author: %s', 'bidnis' ), $bidnis_post_author ) // phpcs:ignore WordPress.Security.EscapeOutput
     )
   );
   ?>

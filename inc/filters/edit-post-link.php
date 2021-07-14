@@ -27,11 +27,7 @@ function bidnis_edit_post_link( $link, $post_id, $text ) {
   $text = sprintf(
     '<i class="fa fa-pen"></i>%1$s<span class="screen-reader-text">%2$s</span>',
     __( 'Edit', 'bidnis' ),
-    sprintf(
-      /* translators: %s: Post title. Only visible to screen readers. */
-      __( 'Edit "%s"', 'bidnis' ),
-      get_the_title()
-    )
+    get_the_title()
   );
 
   return '<a class="post-edit-link" href="' . esc_url( $edit_url ) . '">' . $text . '</a>';

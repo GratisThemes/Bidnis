@@ -45,7 +45,7 @@ function bidnis_social_links() {
   ?>
   <div class="social-links">
     <?php if ( get_theme_mod( 'social_media_rss' ) ) : ?>
-      <a class="social-links__rss" title="<?php esc_attr( bloginfo( 'rss2_url' ) ); ?>" href="<?php esc_url( bloginfo( 'rss2_url' ) ); ?>" target="_blank">
+      <a class="social-links__rss" title="<?php esc_attr( bloginfo( 'rss2_url' ) ); ?>" aria-label="<?php esc_attr_e( 'RSS feed', 'bidnis' ); ?>" href="<?php esc_url( bloginfo( 'rss2_url' ) ); ?>" target="_blank">
         <i class="fa fa-rss"></i>
       </a>
     <?php endif; ?>
@@ -55,7 +55,12 @@ function bidnis_social_links() {
       $service_slug = strtolower( $service );
       ?>
       <?php if ( get_theme_mod( 'social_media_' . $service_slug ) ) : ?>
-        <a class="<?php echo esc_attr( 'social-links__' . $service_slug ); ?>" title="<?php echo esc_attr( $service ); ?>" href="<?php echo esc_url( get_theme_mod( 'social_media_' . $service_slug ) ); ?>" target="_blank">
+        <a class="<?php echo esc_attr( 'social-links__' . $service_slug ); ?>"
+          title="<?php echo esc_attr( $service ); ?>"
+          aria-label="<?php echo esc_attr( $service ); ?>"
+          href="<?php echo esc_url( get_theme_mod( 'social_media_' . $service_slug ) ); ?>"
+          target="_blank"
+        >
           <i class="fab <?php echo esc_attr( $icon ); ?>"></i>
         </a>
       <?php endif; ?>

@@ -30,8 +30,9 @@ function bidnis_post_thumbnail_html( $html, $post_id, $post_thumbnail_id, $size,
     return '<div class="post-thumbnail">' . $html . '</div><!-- .post-thumbnail -->';
   } else {
     $post_permalink = get_the_permalink( $post_id );
+    $post_title     = get_the_title( $post_id );
 
-    return '<a class="post-thumbnail" href="' . $post_permalink . '">' . $html . '</a><!-- .post-thumbnail -->';
+    return '<a class="post-thumbnail" href="' . $post_permalink . '" aria-label="' . $post_title . '">' . $html . '</a><!-- .post-thumbnail -->';
   }
 }
 add_filter( 'post_thumbnail_html', 'bidnis_post_thumbnail_html', 99, 5 );

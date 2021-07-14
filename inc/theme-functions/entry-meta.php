@@ -18,38 +18,71 @@ function bidnis_entry_meta() {
   echo '<div class="entry-meta">';
 
   if ( ! is_single() && ( 'aside' === $post_format || 'status' === $post_format ) ) {
+    $author = get_the_author();
+    $date   = get_the_date();
 
     printf(
       /* translators: %1$s: Author, %2$s: Publish date */
       '<span class="entry-meta__author-and-date">' . esc_html__( '%1$s @ %2$s', 'bidnis' ) . '</span>',
-      '<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_the_author() . '</a>',
-      '<a href="' . esc_url( get_permalink() ) . '">' . get_the_date() . '</a>'
+      sprintf(
+        '<a href="%1$s" aria-label="%2$s">%3$s</a>',
+        esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+        /* translators: %s post author */
+        sprintf( esc_attr__( 'Author: %s', 'bidnis' ), $author ), // phpcs:ignore WordPress.Security.EscapeOutput
+        $author // phpcs:ignore WordPress.Security.EscapeOutput
+      ),
+      sprintf(
+        '<a href="%1$s" aria-label="%2$s">%3$s</a>',
+        esc_url( get_permalink() ),
+        /* translators: %s post date */
+        sprintf( esc_attr__( 'Posted: %s', 'bidnis' ), $date ), // phpcs:ignore WordPress.Security.EscapeOutput
+        $date // phpcs:ignore WordPress.Security.EscapeOutput
+      )
     );
 
   } else {
 
     if ( get_theme_mod( 'entry_meta_author', true ) ) {
+      $author = get_the_author();
+
       printf(
-        '<span class="entry-meta__author"><i class="far fa-user"></i><a href="%2$s">%1$s</a></span>',
-        get_the_author(),
-        esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
+        '<span class="entry-meta__author"><i class="far fa-user"></i><a href="%2$s" aria-label="%3$s">%1$s</a></span>',
+        $author, // phpcs:ignore WordPress.Security.EscapeOutput
+        esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+        sprintf(
+          /* translators: %s post author */
+          esc_attr__( 'Author: %s', 'bidnis' ),
+          $author // phpcs:ignore WordPress.Security.EscapeOutput
+        )
       );
     }
 
     if ( get_theme_mod( 'entry_meta_date', true ) ) {
+      $date = get_the_date();
+
       printf(
-        '<span class="entry-meta__date"><i class="far fa-calendar-alt"></i><a href="%1$s">%2$s</a></span>',
+        '<span class="entry-meta__date"><i class="far fa-calendar-alt"></i><a href="%1$s" aria-label="%3$s">%2$s</a></span>',
         esc_url( get_permalink() ),
-        get_the_date()
+        $date, // phpcs:ignore WordPress.Security.EscapeOutput
+        sprintf(
+          /* translators: %s post date */
+          esc_attr__( 'Posted: %s', 'bidnis' ),
+          $date // phpcs:ignore WordPress.Security.EscapeOutput
+        )
       );
     }
 
     $comment_count = get_comments_number();
     if ( $comment_count && comments_open() && get_theme_mod( 'entry_meta_comments', true ) ) {
       printf(
-        '<span class="entry-meta__comments"><i class="far fa-comment"></i><a href="%2$s#comments">%1$s</a></span>',
+        '<span class="entry-meta__comments"><i class="far fa-comment"></i><a href="%2$s#comments" aria-label="%3$s">%1$s</a></span>',
         esc_html( $comment_count ),
-        esc_url( get_permalink() )
+        esc_url( get_permalink() ),
+        sprintf(
+          /* translators: %s comment count */
+          esc_attr( _n( '%s comment', '%s comments', $comment_count, 'bidnis' ) ),
+          esc_attr( number_format_i18n( $comment_count ) )
+        )
       );
     }
 
@@ -57,13 +90,15 @@ function bidnis_entry_meta() {
       $metadata = wp_get_attachment_metadata();
 
       printf(
-        '<span class="entry-meta__image-size"><i class="fa fa-camera"></i>%1$sx%2$s</span>',
+        '<span class="entry-meta__image-size"><i class="fa fa-camera"></i><span class="screen-reader-text">%1$s</span>%2$sx%3$s</span>',
+        esc_html__( 'Attachment resolution', 'bidnis' ),
         absint( $metadata['width'] ),
         absint( $metadata['height'] )
       );
     }
 
     if ( has_category() && get_theme_mod( 'entry_meta_categories', true ) ) {
+      // TODO: find a way to add aria-label or screen-reader-text for this.
       printf(
         '<span class="entry-meta__categories"><i class="far fa-folder"></i>%s</span>',
         get_the_category_list( ', ' ) // phpcs:ignore WordPress.Security.EscapeOutput
