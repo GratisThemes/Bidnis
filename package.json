@@ -10,7 +10,7 @@
     "css": "npx gulp css",
     "rtl": "npx gulp rtl",
     "pot": "npx gulp pot",
-    "phpcs": "phpcs --standard=./phpcs.xml --ignore=*/node_modules/*,*/assets/* --tab-width=2 -s .; exit 0;"
+    "phpcs": "phpcs --standard=./phpcs.xml --ignore=*/node_modules/*,*/assets/*,*.css,gulpfile.js --tab-width=2 -s .; exit 0;"
   },
   "repository": {
     "type": "git",
