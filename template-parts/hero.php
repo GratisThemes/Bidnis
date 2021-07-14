@@ -9,6 +9,10 @@
 if ( ! is_home() && ! is_front_page() ) {
   return;
 }
+
+if ( max( 1, get_query_var( 'paged' ) ) > 1 ) {
+  return;
+}
 ?>
 
 <div class="hero">
