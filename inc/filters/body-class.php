@@ -10,7 +10,7 @@
  * Add classes to the body depending on customize settings.
  *
  * @param  array $classes Body class names.
- * 
+ *
  * @return array $classes Body class names.
  */
 function bidnis_body_class( $classes ) {

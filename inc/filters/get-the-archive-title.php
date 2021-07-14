@@ -10,7 +10,7 @@
  * Remove prefix from archive titles
  *
  * @param string $title Archive title with prefix.
- * 
+ *
  * @return string $title Archive title without prefix.
  */
 function bidnis_get_the_archive_title( $title ) {

@@ -10,7 +10,7 @@
  * Add title for untitled posts
  *
  * @param string $title The title of the post or page.
- * 
+ *
  * @return string
  **/
 function bidnis_the_title( $title ) {

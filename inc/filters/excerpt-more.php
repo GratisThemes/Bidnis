@@ -10,7 +10,7 @@
  * Adds custom "Read more" element
  *
  * @param string $more_string Read more string.
- * 
+ *
  * @return string
  */
 function bidnis_excerpt_more( $more_string ) {
