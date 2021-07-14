@@ -1,26 +1,16 @@
 /* 3.6 Components: Entry tags */
 .entry-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  font-size: 0.9rem;
+  i {
+    margin-right: 0.5em;
+  }
   
-  > a {
-    border: $border-width $border-style $color-scheme;
-    border: var(--border-width) var(--border-style) var(--color-scheme);
-    padding: 0.25em 0.5em;
-    transition: all .3s ease-in-out;
+  a {
     text-decoration: none;
     color: $text-color;
     color: var(--text-color);
 
-    &:hover,
-    &:focus {
-      border-color: $color-scheme;
-      border-color: var(--color-scheme);
-      background-color: $color-scheme;
-      background-color: var(--color-scheme);
-      text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

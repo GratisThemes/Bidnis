@@ -33,7 +33,7 @@
   </section><!-- .entry-content -->
 
   <?php if ( has_tag() && get_theme_mod( 'entry_meta_tags', true ) ) : ?>
-    <?php the_tags( '<div class="entry-tags">', '', '</div><!-- .entry-tags -->' ); ?>
+    <?php the_tags( '<div class="entry-tags"><i class="fa fa-tags"></i>', ', ', '</div><!-- .entry-tags -->' ); ?>
   <?php endif; ?>
 
   <?php get_template_part( 'template-parts/author-bio' ); ?>
