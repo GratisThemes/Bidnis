@@ -2,7 +2,6 @@
 table,
 td,
 th {
-  border: $border-width $border-style $color-gray;
   border: var(--border-width) var(--border-style) var(--color-gray);
 }
 
@@ -10,7 +9,6 @@ table {
   display: inline-block;
   border-collapse: separate;
   border-spacing: 0;
-  border-width: $border-width 0 0 $border-width;
   border-width: var(--border-width) 0 0 var(--border-width);
   overflow-x: auto;
   max-width: 100%;
@@ -18,15 +16,12 @@ table {
 }
 
 thead {
-  background-color: $color-gray;
   background-color: var(--color-gray);
-  color: $color-black;
   color: var(--color-black);
 }
 
  td,
  th {
-  border-width: 0 $border-width $border-width 0;
   border-width: 0 var(--border-width) var(--border-width) 0;
   padding: 1em;
 }

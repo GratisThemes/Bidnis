@@ -1,6 +1,5 @@
 /* 3.8 Components: Scroll to top */
 #scroll-to-top {
-  background-color: $color-black;
   background-color: var(--color-black);
   position: fixed;
   bottom : -2000px;
@@ -13,7 +12,6 @@
 
   &::before,
   &::after {
-    background-color: $color-white;
     background-color: var(--color-white);
     position: absolute;
     content: "";
@@ -35,12 +33,10 @@
   }
 
   &:hover {
-    background-color: $color-scheme;
     background-color: var(--color-scheme);
 
     &::before,
     &::after {
-      background-color: $text-color;
       background-color: var(--text-color);
     }
 

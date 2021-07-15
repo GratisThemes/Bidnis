@@ -10,7 +10,6 @@
 
   > * + * {
     padding-left: 0.5em;
-    border-left: $border-width $border-style $color-scheme;
     border-left: var(--border-width) var(--border-style) var(--color-scheme);
   }
 }

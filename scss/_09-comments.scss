@@ -4,7 +4,6 @@
 }
 
 .comments-title {
-  border-bottom: $border-width $border-style $color-scheme;
   border-bottom: var(--border-width) var(--border-style) var(--color-scheme);
 }
 
@@ -32,7 +31,6 @@
 .comment-meta {
   a {
     text-decoration: none;
-    color: $text-color;
     color: var(--text-color);
 
     &:hover {
@@ -54,18 +52,15 @@
 }
 
 .comment-reply-link {
-  border-bottom: $border-width $border-style $color-scheme;
   border: var(--border-width) var(--border-style) var(--color-scheme);
   text-decoration: none;
   padding: 0.25em 0.5em;
   transition: .3s ease-in-out;
   margin: 0 !important;
   font-size: 0.8rem;
-  color: $text-color;
   color: var(--text-color);
 
   &:hover {
-    background-color: $color-scheme;
     background-color: var(--color-scheme);
   }
 }
@@ -82,12 +77,10 @@
   }
 
   input[type=submit] {
-    background-color: $color-scheme;
     background-color: var(--color-scheme);
   }
 }
 
 .comment-reply-title {
-  font-weight: $font-weight--bold;
   font-weight: var(--font-weight--bold);
 }

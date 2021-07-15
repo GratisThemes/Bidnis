@@ -6,7 +6,6 @@
   gap: 1em;
 
   a {
-    color: $text-color;
     color: var(--text-color);
   }
 }
@@ -14,16 +13,13 @@
 .nav-previous,
 .nav-next,
 .page-numbers:not(.dots) {
-  background-color: $background-color;
   background-color: var(--background-color);
-  border: $border-width $border-style $color-scheme;
   border: var(--border-width) var(--border-style) var(--color-scheme);
   text-decoration: none;
   transition: background-color .3s ease-in-out;
 
   &:hover,
   &:focus {
-    background-color: $color-scheme;
     background-color: var(--color-scheme);
   }
 }
@@ -45,7 +41,6 @@
 }
 
 .page-numbers.current {
-  background-color: $color-scheme;
   background-color: var(--color-scheme);
 }
 
