@@ -29,6 +29,15 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  .image-nav {
+    &__previous a,
+    &__next a {
+      transition: none;
+    }
+  }
+}
+
 @media (min-width: 28em) {
   .image-nav {
     justify-content: space-between;

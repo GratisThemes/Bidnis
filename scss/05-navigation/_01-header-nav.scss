@@ -123,6 +123,16 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  .header-nav-toggle-label {
+    span,
+    span::before,
+    span::after {
+      transition: none;
+    }
+  }
+}
+
 @media (hover: none) and (pointer: coarse) {
   .header-nav ul {
     display: none;

@@ -26,3 +26,9 @@
 .post-page-numbers + .post-page-numbers {
   margin-left: 0.25em;
 }
+
+@media (prefers-reduced-motion) {
+  .post-page-numbers {
+    transition: none;
+  }
+}

@@ -25,6 +25,14 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  .nav-previous,
+  .nav-next,
+  .page-numbers:not(.dots) {
+    transition: none;
+  }
+}
+
 .nav-next {
   margin-left: auto;
 }

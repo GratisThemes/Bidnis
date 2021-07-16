@@ -66,6 +66,12 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  .comment-reply-link {
+    transition: none;
+  }
+}
+
 @media (min-width: 48em) {
  .comment .children {
     margin: 2em 0 0 2em;

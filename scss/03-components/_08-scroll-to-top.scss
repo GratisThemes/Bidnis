@@ -47,3 +47,11 @@
     }
   }
 }
+
+@media (prefers-reduced-motion) {
+  #scroll-to-top,
+  #scroll-to-top::before,
+  #scroll-to-top::after {
+    transition: none;
+  }
+}

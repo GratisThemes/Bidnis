@@ -57,6 +57,12 @@
   }
 }
 
+@media (prefers-reduced-motion) {
+  .hero__cta {
+    transition: none;
+  }
+}
+
 @media (min-width: 48em) {
   .hero {
     height: calc(100vh - 8em);

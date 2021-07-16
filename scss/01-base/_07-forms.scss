@@ -56,6 +56,16 @@ button,
   }
 }
 
+@media (prefers-reduced-motion) {
+  button,
+  .button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    transition: none;
+  }
+}
+
 [type="submit"] {
   background-color: var(--color-scheme);
 }

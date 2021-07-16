@@ -13,3 +13,9 @@
     background-color: var(--color-scheme);
   }
 }
+
+@media (prefers-reduced-motion) {
+  .read-more-link  {
+    transition: none;
+  }
+}
