@@ -13,7 +13,7 @@
 .nav-previous,
 .nav-next,
 .page-numbers:not(.dots) {
-  background-color: var(--background-color);
+  background-color: transparent;
   border: var(--border-width) var(--border-style) var(--color-scheme);
   border-radius: var(--border-radius);
   text-decoration: none;

@@ -42,7 +42,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  background-color: var(--background-color);
+  background-color: transparent;
   color: var(--text-color);
   border: var(--border-width) var(--border-style) var(--color-scheme);
   border-radius: var(--border-radius);

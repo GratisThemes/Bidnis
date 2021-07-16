@@ -7,7 +7,7 @@
   &__previous a,
   &__next a {
     display: block;
-    background-color: var(--color-white);
+    background-color: transparent;
     border: var(--border-width) var(--border-style) var(--color-scheme);
     border-radius: var(--border-radius);
     text-decoration: none;
