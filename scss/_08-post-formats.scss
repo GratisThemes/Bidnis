@@ -3,6 +3,7 @@
 /* Post formats: Aside*/
 body:not(.single) article.format-aside {
   background-color: var(--color-gray);
+  border-radius: var(--border-radius);
   padding: 1em;
 
   > * + * {

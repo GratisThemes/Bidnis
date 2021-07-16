@@ -50,6 +50,7 @@
     padding: 0.25em 0.5em;
     font-weight: var(--font-weight--xxbold);
     transition: .3s ease-in-out;
+    border-radius: var(--border-radius);
 
     &:hover,
     &:focus {
