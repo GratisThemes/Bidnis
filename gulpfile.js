@@ -56,13 +56,14 @@ function package() {
   return gulp.src( [
       './**/*.*',
       '!./.git',
-      '!./node_modules/**/*.*',
-      '!./releases/**/*.*',
-      '!./scss/**/*.*',
       '!./.gitignore',
       '!./gulpfile.js',
+      '!./node_modules/**/*.*',
       '!./package.json',
       '!./package-lock.json',
+      '!./phpcs.xml',
+      '!./releases/**/*.*',
+      '!./scss/**/*.*',
     ], {
       base: '..'
     })
