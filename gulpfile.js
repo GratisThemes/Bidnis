@@ -54,18 +54,17 @@ function pot() {
 // Package
 function package() {
   return gulp.src( [
-      './**/*.*',
-      '!./.git',
-      '!./.gitignore',
-      '!./gulpfile.js',
-      '!./node_modules/**/*.*',
-      '!./package.json',
-      '!./package-lock.json',
-      '!./phpcs.xml',
-      '!./releases/**/*.*',
-      '!./scss/**/*.*',
+      './*.php',
+      './inc/**/*',
+      './template-parts/**/*',
+      './*.css',
+      './assets/**/*',
+      './languages/**/*',
+      'LICENSE',
+      'readme.txt',
+      'screenshot.png',
     ], {
-      base: '..'
+      base: '.'
     })
     .pipe(zip(`${info.slug}_${info.version}.zip`))
     .pipe(gulp.dest('./releases'))
