@@ -51,6 +51,9 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.0.1 - 2021.07.16
+- Fixed hero section being displayed without any content
+
 2.0.0 - 2021.07.16
 Version 2.0 aims to capture the original vision of the theme, but with a more modern and simplistic approach.
 Some of the biggest changes are as follows. 
