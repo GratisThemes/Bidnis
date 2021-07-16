@@ -1,10 +1,10 @@
 # Theme
 Name: Bidnis
-Author: Gratis Themes (https://github.com/GratisThemes)
+Author: Gratis Themes (https://gratisthemes.kniffen.dev)
 License: GNU General Public License v3
 
 # Copyright
-Bidnis WordPress Theme, Copyright (C) 2017-2019, Gratis Themes
+Bidnis WordPress Theme, Copyright (C) 2016-2021, Gratis Themes
 Bidnis is distributed under the terms of the GNU GPL v3
 
 This program is free software: you can redistribute it and/or modify
@@ -51,6 +51,18 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.0.0 - 2021.07.16
+Version 2.0 aims to capture the original vision of the theme, but with a more modern and simplistic approach.
+Some of the biggest changes are as follows. 
+- Reworked site layout
+- Redesigned post formats
+- Redesigned author-bio below posts
+- Added support for full alignment
+- Organized theme settings
+- Improved accessibility
+- Improved mobile navigation
+- Updated icons
+- Various improvement tweaks and bug fixes
 
 1.2.0 - 2018.12.30
 - Fixed and improved multiple layout and styling issues

@@ -1,4 +1,4 @@
-# Copyright (C) 2018 bidnis
+# Copyright (C) 2021 bidnis
 # This file is distributed under the same license as the bidnis package.
 msgid ""
 msgstr ""
@@ -16,344 +16,373 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:20
+#: 404.php:18
 msgid "404 Not Found"
 msgstr ""
 
-#: 404.php:26
+#: 404.php:25
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:30
+#: 404.php:27
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
-#: archive.php:36, index.php:42, search.php:40
-msgid "Previous page"
-msgstr ""
-
-#: archive.php:37, index.php:43, search.php:41
-msgid "Next page"
-msgstr ""
-
-#: archive.php:38, index.php:44, search.php:42
-msgid "Page"
-msgstr ""
-
-#: archive.php:44, index.php:50, search.php:48
-msgid "Older"
-msgstr ""
-
-#: archive.php:45, index.php:51, search.php:49
-msgid "Newer"
-msgstr ""
-
-#: comments.php:21
+#. translators: %1$s: Comment count, %2$s: Article title.
+#: comments.php:25
 msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgid "%1$s throught on \"%2$s\""
+msgid_plural "%1$s throughts on \"%2$s\""
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:49, comments.php:49
+#: comments.php:47
 msgid "Older comments"
 msgstr ""
 
-#: comments.php:50, comments.php:50
+#: comments.php:48
 msgid "Newer comments"
 msgstr ""
 
-#: footer.php:39
-msgid "Theme: %s"
-msgstr ""
-
-#: footer.php:55
-msgid "Scroll to the top"
-msgstr ""
-
-#: functions.php:98
+#: functions.php:111
 msgctxt "laptop"
 msgid "Laptop"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:119
 msgid "Header"
 msgstr ""
 
-#: functions.php:105, inc/customizer.php:337
+#: functions.php:120, inc/actions/customizer.php:503
 msgid "Footer"
 msgstr ""
 
-#: header.php:37
-msgid "Toggle menu"
+#: index.php:20
+msgid "Nothing Found"
 msgstr ""
 
-#: image.php:35, page.php:52, template-parts/content-aside.php:52, template-parts/content-audio.php:51, template-parts/content-chat.php:35, template-parts/content-gallery.php:43, template-parts/content-image.php:36, template-parts/content-link.php:49, template-parts/content-quote.php:35, template-parts/content-status.php:68, template-parts/content-video.php:51, template-parts/content.php:36
-msgid "Pages:"
+#: index.php:15
+msgid "Search results for: \"%s\""
 msgstr ""
 
-#: image.php:51
-msgid "Previous Image"
+#: index.php:69
+msgid "Older"
 msgstr ""
 
-#: image.php:55
-msgid "Next Image"
+#: index.php:70
+msgid "Newer"
 msgstr ""
 
-#: page.php:32, template-parts/content-aside.php:33, template-parts/content-status.php:33, template-parts/header-entry.php:90
-msgid "Edit"
+#: index.php:62
+msgid "Previous page"
 msgstr ""
 
-#: search.php:19
-msgid "Search results for: %s"
+#: index.php:63
+msgid "Next page"
 msgstr ""
 
-#: search.php:24
-msgid "Nothing found"
-msgstr ""
-
-#: searchform.php:11, searchform.php:12
+#: searchform.php:12, searchform.php:13
 msgctxt "label"
 msgid "Search for:"
 msgstr ""
 
-#: searchform.php:12
+#: searchform.php:13
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr ""
 
-#: searchform.php:14
+#: searchform.php:15
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: inc/customizer.php:20
+#. translators: %s Post author
+#. translators: %s post author
+#: template-parts/author-bio.php:28, inc/theme-functions/entry-meta.php:54, inc/theme-functions/entry-meta.php:31
+msgid "Author: %s"
+msgstr ""
+
+#: template-parts/header-nav.php:16
+msgid "Toggle menu"
+msgstr ""
+
+#: template-parts/hero.php:24
+msgid "Header Image"
+msgstr ""
+
+#. translators: %s: Theme name
+#: template-parts/site-footer.php:45
+msgid "Theme: %s"
+msgstr ""
+
+#: template-parts/site-footer.php:61
+msgid "Scroll to the top"
+msgstr ""
+
+#: inc/actions/customizer.php:27
 msgid "Display Site Title"
 msgstr ""
 
-#: inc/customizer.php:32
+#: inc/actions/customizer.php:45
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/customizer.php:44
+#: inc/actions/customizer.php:65
 msgid "Color scheme"
 msgstr ""
 
-#: inc/customizer.php:56
+#: inc/actions/customizer.php:86
 msgid "Header text color"
 msgstr ""
 
-#: inc/customizer.php:68
+#: inc/actions/customizer.php:107
 msgid "Text Color"
 msgstr ""
 
-#: inc/customizer.php:80
+#: inc/actions/customizer.php:128
 msgid "Link Color"
 msgstr ""
 
-#: inc/customizer.php:87
+#: inc/actions/customizer.php:139
 msgid "Entry Metadata"
 msgstr ""
 
-#: inc/customizer.php:98
+#: inc/actions/customizer.php:156
 msgid "Display author"
 msgstr ""
 
-#: inc/customizer.php:110
+#: inc/actions/customizer.php:174
 msgid "Display date posted"
 msgstr ""
 
-#: inc/customizer.php:122
+#: inc/actions/customizer.php:192
 msgid "Display comment count"
 msgstr ""
 
-#: inc/customizer.php:134
-msgid "Display Post Format"
-msgstr ""
-
-#: inc/customizer.php:146
+#: inc/actions/customizer.php:210
 msgid "Display Categories"
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/actions/customizer.php:228
 msgid "Display Tags"
 msgstr ""
 
-#: inc/customizer.php:170
+#: inc/actions/customizer.php:246
 msgid "Display Author Bio"
 msgstr ""
 
-#: inc/customizer.php:177
-msgid "Theme options"
+#: inc/actions/customizer.php:256
+msgid "Content"
 msgstr ""
 
-#: inc/customizer.php:188
-msgid "Display full content of posts on index pages"
+#: inc/actions/customizer.php:273
+msgid "Display full content of posts on archive pages"
 msgstr ""
 
-#: inc/customizer.php:200
-msgid "Display thumbnails on index pages"
+#: inc/actions/customizer.php:291
+msgid "Display post thumbnails on archive pages"
 msgstr ""
 
-#: inc/customizer.php:212
-msgid "Display thumbnails on content pages"
+#: inc/actions/customizer.php:309
+msgid "Display post thumbnails on singular pages"
 msgstr ""
 
-#: inc/customizer.php:224
+#: inc/actions/customizer.php:327
 msgid "Display read more button"
 msgstr ""
 
-#: inc/customizer.php:236
-msgid "Display page numbers on index pages"
+#: inc/actions/customizer.php:337
+msgid "Navigation"
 msgstr ""
 
-#: inc/customizer.php:248
+#: inc/actions/customizer.php:354
+msgid "Display page numbers on archive pages"
+msgstr ""
+
+#: inc/actions/customizer.php:372
 msgid "Text"
 msgstr ""
 
-#: inc/customizer.php:260
+#: inc/actions/customizer.php:390
 msgid "Button text"
 msgstr ""
 
-#: inc/customizer.php:272
+#: inc/actions/customizer.php:408
 msgid "Button URL (link)"
 msgstr ""
 
-#: inc/customizer.php:279
+#: inc/actions/customizer.php:418
 msgid "Contact and Social Media"
 msgstr ""
 
-#: inc/customizer.php:290
+#: inc/actions/customizer.php:435
 msgid "RSS Link"
 msgstr ""
 
-#: inc/customizer.php:302
+#: inc/actions/customizer.php:453
 msgid "Phone number"
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/actions/customizer.php:471
 msgid "E-mail"
 msgstr ""
 
-#: inc/customizer.php:348
+#: inc/actions/customizer.php:520
 msgid "Footer text"
 msgstr ""
 
-#: inc/customizer.php:360
+#: inc/actions/customizer.php:538
 msgid "Show Copyright Icon"
 msgstr ""
 
-#: inc/customizer.php:372
+#: inc/actions/customizer.php:556
 msgid "Show Current Year"
 msgstr ""
 
-#: inc/customizer.php:384
+#: inc/actions/customizer.php:574
 msgid "Advertise Theme"
 msgstr ""
 
-#: inc/customizer.php:396
-msgid "Scroll to top icon in footer"
+#: inc/actions/customizer.php:592
+msgid "Display scroll-to-top button"
 msgstr ""
 
-#: inc/filters.php:22
+#: inc/actions/widget-areas.php:16
+msgid "Above content"
+msgstr ""
+
+#: inc/actions/widget-areas.php:18
+msgid "Widget area above the content"
+msgstr ""
+
+#: inc/actions/widget-areas.php:28
+msgid "Left sidebar"
+msgstr ""
+
+#: inc/actions/widget-areas.php:30
+msgid "Widget area at the left side of the content"
+msgstr ""
+
+#: inc/actions/widget-areas.php:40
+msgid "Right sidebar"
+msgstr ""
+
+#: inc/actions/widget-areas.php:42
+msgid "Widget area at the right side of the content"
+msgstr ""
+
+#: inc/actions/widget-areas.php:52
+msgid "Footer top"
+msgstr ""
+
+#: inc/actions/widget-areas.php:54
+msgid "Widget area on the top of the footer"
+msgstr ""
+
+#: inc/actions/widget-areas.php:64
+msgid "Footer column one"
+msgstr ""
+
+#: inc/actions/widget-areas.php:66
+msgid "Widget area in the footer, column to the far left"
+msgstr ""
+
+#: inc/actions/widget-areas.php:76
+msgid "Footer column two"
+msgstr ""
+
+#: inc/actions/widget-areas.php:78
+msgid "Widget area in the footer, column to the middle left"
+msgstr ""
+
+#: inc/actions/widget-areas.php:88
+msgid "Footer column three"
+msgstr ""
+
+#: inc/actions/widget-areas.php:90
+msgid "Widget area in the footer, column to the middle right"
+msgstr ""
+
+#: inc/actions/widget-areas.php:100
+msgid "Footer column four"
+msgstr ""
+
+#: inc/actions/widget-areas.php:102
+msgid "Widget area in the footer, column to the far right"
+msgstr ""
+
+#: inc/filters/edit-post-link.php:29
+msgid "Edit"
+msgstr ""
+
+#: inc/filters/excerpt-more.php:28
 msgid "Read more"
 msgstr ""
 
-#: inc/filters.php:63
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: inc/filters.php:65
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: inc/filters.php:67
+#: inc/filters/get-the-archive-title.php:28
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/widget-areas.php:12
-msgid "Above content"
+#: inc/filters/get-the-archive-title.php:26
+msgctxt "monthly archives date format"
+msgid "F Y"
 msgstr ""
 
-#: inc/widget-areas.php:14
-msgid "Widget area above the content"
+#: inc/filters/get-the-archive-title.php:24
+msgctxt "yearly archives date format"
+msgid "Y"
 msgstr ""
 
-#: inc/widget-areas.php:22
-msgid "Left Sidebar"
-msgstr ""
-
-#: inc/widget-areas.php:24
-msgid "Widget area at the left side of the content"
-msgstr ""
-
-#: inc/widget-areas.php:32
-msgid "Right Sidebar"
-msgstr ""
-
-#: inc/widget-areas.php:34
-msgid "Widget area at the right side of the content"
-msgstr ""
-
-#: inc/widget-areas.php:42
-msgid "Footer Top"
-msgstr ""
-
-#: inc/widget-areas.php:44, inc/widget-areas.php:54, inc/widget-areas.php:64, inc/widget-areas.php:74, inc/widget-areas.php:84
-msgid "Widget area in the footer"
-msgstr ""
-
-#: inc/widget-areas.php:52
-msgid "Footer One"
-msgstr ""
-
-#: inc/widget-areas.php:62
-msgid "Footer Two"
-msgstr ""
-
-#: inc/widget-areas.php:72
-msgid "Footer Three"
-msgstr ""
-
-#: inc/widget-areas.php:82
-msgid "Footer Four"
-msgstr ""
-
-#: template-parts/content-aside.php:23, template-parts/content-status.php:23
-msgid "%1$s @ %2$s"
-msgstr ""
-
-#: template-parts/content-none.php:15
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: template-parts/footer-entry.php:25
-msgid "Author: %s"
-msgstr ""
-
-#: template-parts/footer-entry.php:42
-msgid "Previous post"
-msgstr ""
-
-#: template-parts/footer-entry.php:43
-msgid "Previous"
-msgstr ""
-
-#: template-parts/footer-entry.php:46
-msgid "Next post"
-msgstr ""
-
-#: template-parts/footer-entry.php:47
-msgid "Next"
-msgstr ""
-
-#: template-parts/header-entry.php:14, template-parts/header-entry.php:19
+#: inc/filters/post-title.php:17
+msgctxt "Added to posts and pages that have missing titles"
 msgid "Untitled post"
 msgstr ""
 
-#: template-parts/header_image.php:17
-msgid "Header Image"
+#. translators: %s post date
+#: inc/theme-functions/entry-meta.php:69, inc/theme-functions/entry-meta.php:38
+msgid "Posted: %s"
+msgstr ""
+
+#. translators: %s comment count
+#: inc/theme-functions/entry-meta.php:83
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/theme-functions/entry-meta.php:94
+msgid "Attachment resolution"
+msgstr ""
+
+#: inc/theme-functions/entry-meta.php:26
+msgid "%1$s @ %2$s"
+msgstr ""
+
+#: inc/theme-functions/social-links.php:48
+msgid "RSS feed"
+msgstr ""
+
+#: template-parts/content/content-none.php:14
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/singular/singular-attachment.php:28, template-parts/singular/singular-page.php:25, template-parts/singular/singular.php:26
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/singular/singular-attachment.php:39
+msgid "Previous Image"
+msgstr ""
+
+#: template-parts/singular/singular-attachment.php:42
+msgid "Next Image"
+msgstr ""
+
+#: template-parts/singular/singular.php:47
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/singular/singular.php:48
+msgid "Next post"
 msgstr ""

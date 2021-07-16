@@ -1,6 +1,6 @@
 {
   "name": "bidnis",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "WordPress theme designed for business, consultant and corporate websites",
   "private": true,
   "scripts": {
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/GratisThemes/Bidnis/issues"
   },
-  "homepage": "https://github.com/GratisThemes/Bidnis#readme",
+  "homepage": "https://gratisthemes.kniffen.dev/bidnis",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
