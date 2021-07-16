@@ -56,6 +56,10 @@ button,
   }
 }
 
+[type="submit"] {
+  background-color: var(--color-scheme);
+}
+
 fieldset {
   min-width: 0px;
 }
@@ -70,4 +74,9 @@ fieldset {
 .search-form .search-submit,
 .post-password-form [type="submit"] {
   margin-left: -0.0625em;
+}
+
+.post-password-form [type="submit"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
