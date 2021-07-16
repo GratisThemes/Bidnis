@@ -11,27 +11,27 @@ select {
 }
 
 /* iOS not respecting border-radius */
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password],
-input[type=number],
-input[type=tel],
-input[type=color],
-input[type=datetime],
-input[list=datalist],
-input[type=search],
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="tel"],
+[type="color"],
+[type="datetime"],
+[list="datalist"],
+[type="search"],
 textarea {
   -webkit-appearance: none;
 }
 
-input[type=color] {
+[type="color"] {
   padding: initial;
   cursor: pointer;
   border: none;
 }
 
-input[type=file] {
+[type="file"] {
   padding: 0;
   border: none;
 }
@@ -39,9 +39,9 @@ input[type=file] {
 /* buttons */
 button,
 .button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   background-color: var(--background-color);
   color: var(--text-color);
   border: var(--border-width) var(--border-style) var(--color-scheme);
@@ -67,6 +67,6 @@ fieldset {
 }
 
 .search-form .search-submit,
-.post-password-form input[type=submit] {
+.post-password-form [type="submit"] {
   margin-left: -0.0625em;
 }

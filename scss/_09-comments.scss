@@ -76,7 +76,7 @@
     display: block;
   }
 
-  input[type=submit] {
+  [type="submit"] {
     background-color: var(--color-scheme);
   }
 }
