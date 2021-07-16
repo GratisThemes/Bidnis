@@ -22,7 +22,7 @@ GNU General Public License for more details.
 # Libraries
 # The theme bundles the following third-party resources:
 
-normalize.css v8.0.0
+normalize.css v8.0.1
 License: MIT
 Source: github.com/necolas/normalize.css
 
