@@ -13,6 +13,10 @@ if ( ! is_home() && ! is_front_page() ) {
 if ( max( 1, get_query_var( 'paged' ) ) > 1 ) {
   return;
 }
+
+if ( ! has_header_image() && ! get_theme_mod( 'header_image_text' ) && ! get_theme_mod( 'header_image_cta_text' ) ) {
+  return;
+}
 ?>
 
 <div class="hero">
