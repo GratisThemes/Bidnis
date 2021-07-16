@@ -51,8 +51,34 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
-1.0.0 - 2016.06.16
-- Initial release
+
+1.2.0 - 2018.12.30
+- Fixed and improved multiple layout and styling issues
+- Improved post formats support
+- Updated theme information for author rebranding
+- Removed breadcrumbs
+- Updated language file
+- Added support for the_privacy_policy_link
+- Improved editor styles
+- Removed jQuery from functions.js
+- Added filter for archive titles
+
+1.1.4 - 2017.05.18
+- Updated theme information for author rebranding
+- Added table of contents to style.css
+- Simplified js/functions.js
+
+1.1.3 - 2016.11.30
+- Fixed e-mail in header not linked properly
+
+1.1.2 - 2016.11.23
+- Fixed usage of get_the_permalink instead of the_permalink on .post-thumbnail and .read-more in template-parts/loop.php
+
+1.1.1 - 2016.11.06
+- Enqueued comment-reply script
+- Replaced customized css styles being added to the header with wp_add_inline_style option
+- Fixed sticky post icon not showing
+- Added editor stylesheet
 
 1.1.0 - 2016.10.15
 - Included copyright information in style.css and readme.txt
@@ -70,30 +96,5 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 - Replaced custom get_the_archive_title filter with JS solution
 - Escaped various user inputs
 
-1.1.1 - 2016.11.06
-- Enqueued comment-reply script
-- Replaced customized css styles being added to the header with wp_add_inline_style option
-- Fixed sticky post icon not showing
-- Added editor stylesheet
-
-1.1.2 - 2016.11.23
-- Fixed usage of get_the_permalink instead of the_permalink on .post-thumbnail and .read-more in template-parts/loop.php
-
-1.1.3 - 2016.11.30
-- Fixed e-mail in header not linked properly
-
-1.1.4 - 2017.05.18
-- Updated theme information for author rebranding
-- Added table of contents to style.css
-- Simplified js/functions.js
-
-1.2.0 - 2018.12.30
-- Fixed and improved multiple layout and styling issues
-- Improved post formats support
-- Updated theme information for author rebranding
-- Removed breadcrumbs
-- Updated language file
-- Added support for the_privacy_policy_link
-- Improved editor styles
-- Removed jQuery from functions.js
-- Added filter for archive titles
+1.0.0 - 2016.06.16
+- Initial release
