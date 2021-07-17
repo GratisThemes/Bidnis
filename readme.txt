@@ -51,6 +51,10 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.0.2 - 2021.07.17
+- Fixed Phone number in header being formated as an http link
+- Fixed hero section not showing on static homepage
+
 2.0.1 - 2021.07.16
 - Fixed hero section being displayed without any content
 
