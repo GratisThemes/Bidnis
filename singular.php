@@ -10,6 +10,8 @@
 
 <?php get_header(); ?>
 
+<?php get_template_part( 'template-parts/hero' ); ?>
+
 <main class="site-main" role="main">
 
   <?php get_sidebar( 'left' ); ?>
