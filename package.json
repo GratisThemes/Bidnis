@@ -1,7 +1,7 @@
 {
   "name": "bidnis",
   "version": "2.0.2",
-  "description": "WordPress theme designed for business, consultant and corporate websites",
+  "description": "Create a website customized to suit your business and its customers. This theme is simple, clean, and professional. Something a small businesses can use as a starting point.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
