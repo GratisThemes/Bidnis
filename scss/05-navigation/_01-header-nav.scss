@@ -110,11 +110,13 @@
 
 
   li.menu-item-has-children > a::after {
+    content: '';
     display: inline-block;
+    height: 0;
+    width: 0;
     margin-left: 0.5em;
-    line-height: 1em;
-    font-size: 0.6rem;
-    content: '▼';
+    border-inline: 0.25rem solid transparent;
+    border-block-start: 0.5rem solid var(--color-white);
   }
 
   a {
@@ -202,7 +204,9 @@
     }
 
     ul li.menu-item-has-children > a::after {
-       content: '▶' #{"/*!rtl:'⯇';*/"};
+      border-block: 0.25rem solid transparent;
+      border-inline-start: 0.5rem solid var(--color-white);
+      border-inline-end: none;
     }
   }
 }
