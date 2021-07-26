@@ -51,6 +51,13 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.0.3 - 2021.07.26
+- Improved CSS specificity of nav toggle label to prevent plugins from affecting its visibility
+- Updated theme tags
+- Updated theme description
+- Updated theme URI
+- Replaced menu dropdown arrow icons with CSS 
+
 2.0.2 - 2021.07.17
 - Fixed Phone number in header being formated as an http link
 - Fixed hero section not showing on static homepage
