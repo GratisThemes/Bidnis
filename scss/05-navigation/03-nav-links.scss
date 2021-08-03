@@ -33,14 +33,11 @@
   }
 }
 
-.nav-next {
-  margin-left: auto;
-}
-
 .nav-previous a,
 .nav-next a,
 .page-numbers:not(.dots) {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   padding: 0.5em 0.75em;
 }
@@ -86,5 +83,13 @@
   .page-numbers:first-child:not(.prev),
   .page-numbers.next {
     margin-left: auto;
+  }
+
+  .nav-next {
+    margin-inline-start: auto;
+  }
+
+  .nav-previous ~ .nav-next {
+    margin-inline-start: 0;
   }
 }

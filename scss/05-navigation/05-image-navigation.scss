@@ -2,12 +2,13 @@
 .image-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
 
   &__previous a,
   &__next a {
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: transparent;
     border: var(--border-width) var(--border-style) var(--color-scheme);
     border-radius: var(--border-radius);
@@ -41,8 +42,6 @@
 
 @media (min-width: 28em) {
   .image-nav {
-    justify-content: space-between;
-
     &__next {
       margin-left: auto;
     }
