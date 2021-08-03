@@ -51,6 +51,15 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.1.0 - 2021.08.03
+- Reworked comment layout
+- Improved password and search form responsiveness
+- Improved nav-links responsiveness
+- Fixed menu items displaying over each other
+- Fixed header overflowing with large logo
+- Fixed tables being 100% width
+- Fixed comments title being displayed with 0 comments
+
 2.0.3 - 2021.07.26
 - Improved CSS specificity of nav toggle label to prevent plugins from affecting its visibility
 - Updated theme tags
