@@ -12,6 +12,7 @@ table {
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
+  margin-block-end: 1em;
 }
 
 thead {
@@ -27,7 +28,6 @@ thead {
 @media (min-width: 28em) {
   table {
     display: table;
-    width: 100%;
     white-space: initial;
   }
 }
