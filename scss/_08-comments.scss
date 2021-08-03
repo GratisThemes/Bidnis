@@ -7,10 +7,14 @@
   border-bottom: var(--border-width) var(--border-style) var(--color-scheme);
 }
 
+.comment-list,
+.comment-list .children {
+  list-style: none;
+}
+
 .comment-list {
   margin-left: 0;
-  list-style: none;
-
+ 
   > * + * {
     margin-top: 2em;
   }
