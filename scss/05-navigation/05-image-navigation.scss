@@ -1,0 +1,50 @@
+/* Navigation: Image navigation*/
+.image-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+
+  &__previous a,
+  &__next a {
+    display: block;
+    background-color: transparent;
+    border: var(--border-width) var(--border-style) var(--color-scheme);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    padding: 0.5em 0.75em;
+    transition: background-color .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-scheme);
+    }
+  }
+
+  &__previous i {
+    margin-right: 0.5em;
+  }
+
+  &__next i {
+    margin-left: 0.5em;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .image-nav {
+    &__previous a,
+    &__next a {
+      transition: none;
+    }
+  }
+}
+
+@media (min-width: 28em) {
+  .image-nav {
+    justify-content: space-between;
+
+    &__next {
+      margin-left: auto;
+    }
+  }
+}

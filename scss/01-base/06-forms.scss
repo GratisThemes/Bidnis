@@ -1,0 +1,92 @@
+/* Base: Form elements */
+input,
+textarea,
+select {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  max-width: 100%;
+  border: var(--border-width) var(--border-style) var(--color-scheme);
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+}
+
+/* iOS not respecting border-radius */
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="tel"],
+[type="color"],
+[type="datetime"],
+[list="datalist"],
+[type="search"],
+textarea {
+  -webkit-appearance: none;
+}
+
+[type="color"] {
+  padding: initial;
+  cursor: pointer;
+  border: none;
+}
+
+[type="file"] {
+  padding: 0;
+  border: none;
+}
+
+/* buttons */
+button,
+.button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  background-color: transparent;
+  color: var(--text-color);
+  border: var(--border-width) var(--border-style) var(--color-scheme);
+  border-radius: var(--border-radius);
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-scheme);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  button,
+  .button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    transition: none;
+  }
+}
+
+[type="submit"] {
+  background-color: var(--color-scheme);
+}
+
+fieldset {
+  min-width: 0px;
+}
+
+/* Search and Password forms */
+.search-form,
+.post-password-form p:nth-child(2)  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form .search-submit,
+.post-password-form [type="submit"] {
+  margin-left: -0.0625em;
+}
+
+.post-password-form [type="submit"] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

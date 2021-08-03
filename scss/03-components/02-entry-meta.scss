@@ -1,0 +1,23 @@
+/* Components: Entry meta */
+.entry-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: .85rem;
+
+  i {
+    margin-right: 0.25em;
+  }
+
+  a {
+    color: var(--text-color);
+  }
+}
+
+@media (min-width: 48em) {
+  .entry-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}

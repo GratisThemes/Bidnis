@@ -1,0 +1,44 @@
+/* Layout: Site main */
+.site-main {
+  margin: 4em 0;
+  flex-grow: 1;
+  
+  > * + * {
+    margin-top: 6em;
+  }
+}
+
+@media (min-width: 48em) {
+  .site-main {
+    display: grid;
+    grid-template-columns: 18em minmax(0, 1fr) 18em;
+    gap: 4em;
+    grid-template-areas: "content content content";
+    align-content: start;
+    align-items: start;
+
+    > * + * {
+      margin-top: 0;
+    }
+  }
+
+  body.has-right-sidebar .site-main {
+    grid-template-areas: "content content right-sidebar";
+  }
+
+  body.has-left-sidebar .site-main {
+    grid-template-areas: "left-sidebar content content";
+  }
+
+  body.has-right-sidebar.has-left-sidebar .site-main {
+    grid-template-areas: 
+      "left-sidebar content content"
+      "left-sidebar right-sidebar right-sidebar";
+  }
+}
+
+@media (min-width: 64em) {
+  body.has-right-sidebar.has-left-sidebar .site-main {
+    grid-template-areas: "left-sidebar content right-sidebar";
+  }
+}

@@ -1,0 +1,90 @@
+/* Navigation: Nav links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+
+  a {
+    color: var(--text-color);
+  }
+}
+
+.nav-previous,
+.nav-next,
+.page-numbers:not(.dots) {
+  background-color: transparent;
+  border: var(--border-width) var(--border-style) var(--color-scheme);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-scheme);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .nav-previous,
+  .nav-next,
+  .page-numbers:not(.dots) {
+    transition: none;
+  }
+}
+
+.nav-next {
+  margin-left: auto;
+}
+
+.nav-previous a,
+.nav-next a,
+.page-numbers:not(.dots) {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+}
+
+.page-numbers:not(.prev, .next) {
+  display: none;
+}
+
+.page-numbers.dots {
+  padding: 0.5em 0.5em 0;
+}
+
+.page-numbers.current {
+  background-color: var(--color-scheme);
+}
+
+.nav-previous i,
+.page-numbers.prev i {
+  margin-right: 0.5em;
+}
+
+.nav-next i,
+.page-numbers.next i {
+  margin-left: 0.5em;
+}
+
+@media (min-width: 28em) {
+  .page-numbers.current {
+    display: block;
+  }
+}
+
+@media (min-width: 48em) {
+  .page-numbers:not(.prev, .next) {
+    display: block;
+  }
+
+  .page-numbers:last-child:not(.next),
+  .page-numbers.prev {
+    margin-right: auto;
+  }
+
+  .page-numbers:first-child:not(.prev),
+  .page-numbers.next {
+    margin-left: auto;
+  }
+}

@@ -1,76 +1,14 @@
-@charset "UTF-8";
-/*
-  Theme Name: Bidnis
-  Theme URI: https://gratisthemes.kniffen.dev/themes/bidnis
-  Author: Gratis Themes
-  Author URI: https://gratisthemes.kniffen.dev/
-  Description: Create a website customized to suit your business and its customers. This theme is simple, clean, and professional. Something a small businesses can use as a starting point.
-  Version: 2.0.3
-  Requires at least: 5.0
-  Tested up to: 5.7
-  Requires PHP: 7.0
-  License: GNU General Public License v3
-  License URI: http://www.gnu.org/licenses/gpl-3.0.html  
-  Tags: blog, news, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, wide-blocks
-  Text Domain: bidnis
-
-  Bidnis WordPress Theme, Copyright (C) 2016-2021, Gratis Themes
-  Bidnis distributed under the terms of the GNU GPL v3
-*/
-
-/*
-Table of Contents
--------------------------------
-0.0 Normalize
-1.0 Base
-  1.1 Root
-  1.2 Base
-  1.3 Typography
-  1.4 Lists
-  1.5 Tables
-  1.6 Media
-  1.7 Forms
-2.0 Helper classes
-  2.1 Alignment
-3.0 Components
-  3.1 Heades
-  3.2 Entry meta
-  3.3 Edit post link
-  3.4 Post thumbnail
-  3.5 read-more-link
-  3.6 Entry tags
-  3.7 Author bio 
-  3.8 Scroll to top
-4.0 Layout
-  4.1 Base
-  4.2 Site container
-  4.3 Site main
-  4.4 Content container
-  4.5 Widget areas
-5.0 Navigation
-  5.1 Header nav
-  5.2 Footer nav
-  5.3 Nav links
-  5.4 Page links
-6.0 Site-header
-7.0 Hero
-8.0 Post formats
-9.0 Comments
-10.0 Widgets
-11.0 Site footer
-12.0 Accessibility
-*/
-
+@import "file-header";
+@import "table-of-contents";
 @import "00-normalize";
 @import "01-base";
-@import "02-helper-classes";
+@import "02-classes";
 @import "03-components";
 @import "04-layout";
 @import "05-navigation";
 @import "06-site-header";
 @import "07-hero";
-@import "08-post-formats";
-@import "09-comments";
-@import "10-widgets";
-@import "11-site-footer";
-@import "12-accessibility";
+@import "08-comments";
+@import "09-widgets";
+@import "10-site-footer";
+@import "11-post-formats";

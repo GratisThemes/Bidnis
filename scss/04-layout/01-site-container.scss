@@ -1,0 +1,16 @@
+/* Layout: Site container */
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  > * {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 83em) {
+  .site-container > * {
+    padding: 1em calc((100% - 80em) / 2);
+  }
+}
