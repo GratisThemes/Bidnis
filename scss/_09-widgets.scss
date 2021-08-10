@@ -100,3 +100,17 @@
     color: var(--color-scheme);
   }
 }
+
+.widget_rss {
+  .rsswidget {
+    font-weight: 600;
+  }
+
+  .rss-date {
+    font-size: .9rem;
+  }
+
+  .rssSummary {
+    margin-block-start: .25em;
+  }
+}
