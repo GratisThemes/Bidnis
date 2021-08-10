@@ -23,17 +23,16 @@
 .widget {
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-
-    ul {
-      margin: 0 0 0 1em;
-    }
   }
 
-  li {
-    line-height: 2;
-    margin: 0;
+  ul,
+  ol {
+    margin-inline-start: 0;
+    
+    ul,
+    ol {
+      margin-inline-start: 1em;
+    }
   }
 
   a {
