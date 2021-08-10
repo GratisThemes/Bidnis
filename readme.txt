@@ -51,6 +51,12 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.1.1 - 2021.08.10
+- Fixed spacing around pingbacks not being styled the same as comments
+- Fixed comment author alignment
+- Fixed list spacing
+- Improve RSS widget styles
+
 2.1.0 - 2021.08.03
 - Reworked comment layout
 - Improved password and search form responsiveness
