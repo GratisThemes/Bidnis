@@ -51,6 +51,11 @@ https://www.pexels.com/photo/mock-up-technology-laptop-apple-51171/
 
 # changelog
 
+2.2.0 - 2021.08.13
+- Added basic block styles support
+- Fixed footer text setting not working
+- Fixed layout spacing
+
 2.1.1 - 2021.08.10
 - Fixed spacing around pingbacks not being styled the same as comments
 - Fixed comment author alignment

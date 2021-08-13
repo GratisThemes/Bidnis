@@ -5,7 +5,7 @@
   Author: Gratis Themes
   Author URI: https://gratisthemes.kniffen.dev/
   Description: Create a website customized to suit your business and its customers. This theme is simple, clean, and professional. Something a small businesses can use as a starting point.
-  Version: 2.1.1
+  Version: 2.2.0
   Requires at least: 5.0
   Tested up to: 5.7
   Requires PHP: 7.0
@@ -56,6 +56,7 @@ Comments
 Widgets
 Site footer
 Post formats
+Block styles
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -551,13 +552,19 @@ th {
 
 table {
   display: block;
-  border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-margin-after: 1em;
           margin-block-end: 1em;
+}
+@media (min-width: 28em) {
+  table {
+    display: table;
+    white-space: initial;
+    border-collapse: collapse;
+  }
 }
 
 thead {
@@ -570,12 +577,6 @@ th {
   padding: 1em;
 }
 
-@media (min-width: 28em) {
-  table {
-    display: table;
-    white-space: initial;
-  }
-}
 /* Base: Media */
 img,
 figure,
@@ -1199,11 +1200,6 @@ body {
 
 .content-container article > * + * {
   margin-top: 2em;
-}
-
-.single .content-container article > * + *,
-.page .content-container article > * + * {
-  margin-top: 4em;
 }
 
 /* Layout: Widget areas */
@@ -2292,4 +2288,79 @@ body:not(.single) article.format-video .entry-content object {
   height: auto;
   aspect-ratio: 16/9;
   aspect-ratio: attr(width)/attr(height);
+}
+
+/* Block styles */
+.wp-block-code {
+  background-color: var(--color-gray);
+  border: none;
+}
+.wp-block-code code {
+  background-color: transparent;
+}
+
+.wp-block-verse {
+  font-family: var(--font-family);
+  padding: 0.5em 0;
+}
+
+.wp-block-preformatted {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.wp-block-calendar table {
+  display: table;
+  margin-block: 1em;
+}
+
+.wp-block-pullquote blockquote {
+  background: transparent;
+}
+
+p.wp-block-cover-text:not(.has-text-color) {
+  color: var(--color-white);
+}
+
+p.wp-block-cover-text a {
+  text-decoration: none;
+}
+
+.wp-block-button a,
+.wp-block-file .wp-block-file__button {
+  background-color: var(--color-scheme);
+  color: var(--text-color);
+  -webkit-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.wp-block-button.is-style-outline a {
+  border-color: var(--color-scheme);
+}
+
+.wp-block-button.is-style-squared a {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.wp-block-file .wp-block-file__button {
+  display: table;
+  margin: 0.5em 0 1em 0;
+  font-size: 1rem;
+}
+
+.wp-block-separator {
+  border: none;
+  width: 25%;
+}
+
+.wp-block-separator.is-style-wide {
+  width: 100%;
 }

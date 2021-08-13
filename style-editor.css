@@ -4,7 +4,7 @@
   Author: Gratis Themes
   Author URI: https://gratisthemes.kniffen.dev/
   Description: Create a website customized to suit your business and its customers. This theme is simple, clean, and professional. Something a small businesses can use as a starting point.
-  Version: 2.1.1
+  Version: 2.2.0
   Requires at least: 5.0
   Tested up to: 5.7
   Requires PHP: 7.0
@@ -525,13 +525,19 @@ th {
 
 table {
   display: block;
-  border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-margin-after: 1em;
           margin-block-end: 1em;
+}
+@media (min-width: 28em) {
+  table {
+    display: table;
+    white-space: initial;
+    border-collapse: collapse;
+  }
 }
 
 thead {
@@ -544,12 +550,6 @@ th {
   padding: 1em;
 }
 
-@media (min-width: 28em) {
-  table {
-    display: table;
-    white-space: initial;
-  }
-}
 /* Base: Media */
 img,
 figure,
