@@ -7,12 +7,17 @@ th {
 
 table {
   display: block;
-  border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   margin-block-end: 1em;
+
+  @media (min-width: 28em) {
+    display: table;
+    white-space: initial;
+    border-collapse: collapse;
+  }
 }
 
 thead {
@@ -23,11 +28,4 @@ thead {
  td,
  th {
   padding: 1em;
-}
-
-@media (min-width: 28em) {
-  table {
-    display: table;
-    white-space: initial;
-  }
 }
