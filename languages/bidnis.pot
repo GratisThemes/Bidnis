@@ -1,4 +1,4 @@
-# Copyright (C) 2021 bidnis
+# Copyright (C) 2022 bidnis
 # This file is distributed under the same license as the bidnis package.
 msgid ""
 msgstr ""
